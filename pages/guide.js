@@ -175,7 +175,7 @@ export default function Guide() {
         <Box pb={4}>
           <Box textAlign="center" mt={5} mb={4} width={["100%"]}>
             <Link href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fswiftui.design%2Fguide&via=philipcdavis&text=A%20Designer%27s%20Guide%20to%20SwiftUI">
-              <a sx={{ color: "red" }} target="_blank">
+              <a target="_blank">
                 <BtnTwitter twitter>Share on Twitter</BtnTwitter>
               </a>
             </Link>
