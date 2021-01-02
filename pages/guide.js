@@ -1,8 +1,9 @@
 import Head from "../components/Head";
 import GradientBlur from "../components/GradientBlur";
 import Link from "next/link";
+// import Image from "next/image";
 import Logo from "../components/Logo";
-import { Box, Flex, Text } from "rebass";
+import { Box, Flex, Text, Image } from "rebass";
 import { colors } from "../components/Utils";
 import styled from "styled-components";
 import { SystemCard, MediaCard } from "../components/Card";
@@ -233,7 +234,7 @@ export default function Guide() {
 
         <Box textAlign="center">
           <Box mb={"90px"} ml={"-2px"} opacity={0.4}>
-            <img src="/Icon.svg" width="37px" height="37px" />
+            <Image src="/Icon.svg" width="37px" height="37px" />
           </Box>
           <h2>SwiftUI Resources for Designers</h2>
           <Text mt={4}>

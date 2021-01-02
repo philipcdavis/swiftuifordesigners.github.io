@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { Box, Text, Flex } from "rebass";
+// import Image from "next/image";
+import { Box, Text, Flex, Image } from "rebass";
 import styled from "styled-components";
 import { colors } from "./Utils";
 import { Btn } from "./Button";
@@ -53,7 +54,7 @@ export function MediaCard(props) {
   return (
     <Box width={[1, 1 / 2]} m={0}>
       <Card mb={5} mx={3} p={0}>
-        <img width="400" height="200" src={props.src} />
+        <Image width="400" height="200" src={props.src} />
         <Box pt={20} px={"6px"}>
           <Text
             color={colors.primaryText}
