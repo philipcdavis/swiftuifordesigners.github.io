@@ -3,7 +3,7 @@ import GradientBlur from "../components/GradientBlur";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../components/Logo";
-import { Box, Flex, Text, Image as Img } from "rebass";
+import { Box, Flex, Text } from "rebass";
 import { colors } from "../components/Utils";
 import styled from "styled-components";
 import { SystemCard, MediaCard } from "../components/Card";
