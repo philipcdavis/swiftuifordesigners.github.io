@@ -1,7 +1,6 @@
 import Head from "../components/Head";
 import GradientBlur from "../components/GradientBlur";
 import Link from "next/link";
-import Image from "next/image";
 import Logo from "../components/Logo";
 import { Box, Flex, Text } from "rebass";
 import { colors } from "../components/Utils";
@@ -190,13 +189,12 @@ export default function Guide() {
         </Flex>
 
         <h2>
-          <Numeral color={colors.lightGreen}>4</Numeral>Examples
+          <Numeral color={colors.lightGreen}>4</Numeral>App Examples
         </h2>
         <p>
           There are lots of good example apps by designers in the SwiftUI
           community. This fully functional iOS and Mac App that Apple provides
-          can be a good starting point for your own project, or just a helpful
-          reference.
+          can be a good starting point and a helpful reference.
         </p>
 
         <Flex mx={-3} mb={"50px"} flexWrap="wrap">
@@ -235,7 +233,7 @@ export default function Guide() {
 
         <Box textAlign="center">
           <Box mb={"90px"} ml={"-2px"} opacity={0.4}>
-            <Image src="/Icon.svg" width="37px" height="37px" />
+            <img src="/Icon.svg" width="37px" height="37px" />
           </Box>
           <h2>SwiftUI Resources for Designers</h2>
           <Text mt={4}>
