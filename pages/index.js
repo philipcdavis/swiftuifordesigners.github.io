@@ -1,8 +1,10 @@
 import Head from "next/head";
+import Link from "next/link";
 import GradientBlur from "../components/GradientBlur";
 import Logo from "../components/Logo";
 import { Box, Text } from "rebass";
 import { colors } from "../components/Utils";
+import { Btn } from "../components/Button";
 import SignupForm from "../components/SignupForm";
 
 export default function Home() {
@@ -36,6 +38,10 @@ export default function Home() {
         <Box mx="auto" mt={3} mb={4} py={3} width={["100%", "500px"]}>
           <SignupForm />
         </Box>
+
+        <Link href="/guide">
+          <Btn color="gray2">Read the Guide</Btn>
+        </Link>
       </Box>
     </>
   );

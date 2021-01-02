@@ -84,11 +84,11 @@ const BtnIcon = styled(Icon)`
 
 export function BtnTwitter({ children, ...rest }) {
   return (
-    <Btn twitter {...rest}>
+    <BtnLink twitter {...rest}>
       <Flex sx={{ height: "24px" }} alignItems="center">
         <BtnIcon fill={colors.twitterBlue} name="twitter" size={34} />
         {children}
       </Flex>
-    </Btn>
+    </BtnLink>
   );
 }

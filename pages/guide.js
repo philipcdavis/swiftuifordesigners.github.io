@@ -1,5 +1,6 @@
 import Head from "next/head";
 import GradientBlur from "../components/GradientBlur";
+import Link from "next/link";
 import Logo from "../components/Logo";
 import { Box, Flex, Text } from "rebass";
 import { colors } from "../components/Utils";
@@ -173,9 +174,15 @@ export default function Guide() {
 
         <Box pb={4}>
           <Box textAlign="center" mt={5} mb={4} width={["100%"]}>
-            <BtnTwitter twitter>Share on Twitter</BtnTwitter>
+            <Link href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fswiftui.design%2Fguide&via=philipcdavis&text=A%20Designer%27s%20Guide%20to%20SwiftUI">
+              <a sx={{ color: "red" }} target="_blank">
+                <BtnTwitter twitter>Share on Twitter</BtnTwitter>
+              </a>
+            </Link>
             <Text opacity={0.5} mt={3}>
-              <a href="#">@philipcdavis</a>
+              <Link href="https://twitter.com/philipcdavis">
+                <a target="_blank">@philipcdavis</a>
+              </Link>
             </Text>
           </Box>
         </Box>

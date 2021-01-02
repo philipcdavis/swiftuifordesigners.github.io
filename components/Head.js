@@ -7,7 +7,7 @@ const Head = function (props) {
   const description = props.description
     ? props.description
     : "SwiftUI is a powerful design tool.";
-  const image = props.image ? props.image : "/og.png";
+  const image = props.image ? props.image : "https://swiftui.design/og.png";
   return (
     <>
       <NextHead>
