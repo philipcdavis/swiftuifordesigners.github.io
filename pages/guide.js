@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from "../components/Head";
 import GradientBlur from "../components/GradientBlur";
 import Link from "next/link";
 import Logo from "../components/Logo";
