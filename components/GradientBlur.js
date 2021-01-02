@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { colors } from "./Utils";
 
 const Container = styled.div`
@@ -13,49 +13,30 @@ const Container = styled.div`
 `;
 
 const Canvas = styled.div`
-  &::after {
-    content: "";
-    background: linear-gradient(
-        to top,
-        ${colors.surfaceBackground} 30%,
-        rgba(255, 255, 255, 0) 0%
-      ),
-      conic-gradient(
-        ${colors.yellow},
-        ${colors.red},
-        ${colors.purple},
-        ${colors.blue},
-        ${colors.teal},
-        ${colors.green},
-        ${colors.yellow}
-      );
-    position: absolute;
-    left: -600px;
-    right: -600px;
-    top: -400px;
-    bottom: 0;
-    filter: blur(60px);
-    /* animation: ${rotate} 10s linear infinite;
-    animation-direction: alternate; */
-  }
-`;
-
-const Blur = styled.div`
+  background: conic-gradient(
+    ${colors.yellow},
+    ${colors.red},
+    ${colors.purple},
+    ${colors.blue},
+    ${colors.teal},
+    ${colors.yellow}
+  );
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  top: 75px;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  left: calc(50% - 138px);
+  filter: blur(38px);
+  opacity: 0.4;
 `;
 
-const GradientMap = () => {
+const GradientBlur = () => {
   return (
     <Container>
       <Canvas />
-      <Blur />
     </Container>
   );
 };
 
-export default GradientMap;
+export default GradientBlur;

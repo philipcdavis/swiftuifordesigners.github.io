@@ -6,7 +6,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: white;
-  color: #3b4b75;
+  color: #616169;
   font-size: 1.15rem;
   line-height: 1.6;
 }
@@ -36,14 +36,22 @@ h1 {
   margin-bottom: 2em;
   margin-top: 0;
   font-weight: 500;
+  color: #37373c;
 }
 
 h2 {
   font-size: 1em;
   margin-top: 2em;
   margin-bottom: -2%;
+  color: #37373c;
 }
 
 p {
   margin-bottom: 5%;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
 }

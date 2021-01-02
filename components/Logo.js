@@ -1,22 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "next/image";
 
 const LogoStyles = styled.div`
   position: relative;
-  height: 110px;
-  width: 110px;
+  height: 106px;
+  width: 106px;
   border-radius: 24px;
-  margin: 120px auto 0 auto;
-  box-shadow: 0 11px 6px -11px rgba(0, 0, 0, 0.1);
+  margin: 160px auto 0 auto;
+  box-shadow: 0 7px 5px -7px rgba(0, 0, 0, 0.2);
 
   &::before {
     content: " ";
     mix-blend-mode: overlay;
-    width: 110px;
-    height: 110px;
-    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.4), 0 2px 59px 0 rgba(0, 0, 0, 0.6),
-      0 13px 11px -10px rgba(0, 0, 0, 1);
+    width: 106px;
+    height: 106px;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5), 0 2px 59px 0 rgba(0, 0, 0, 0.6),
+      0 12px 10px -7px rgba(0, 0, 0, 0.8);
     border-radius: 24px;
     position: absolute;
     top: 0;
@@ -29,7 +28,7 @@ const LogoStyles = styled.div`
 export default function Logo(props) {
   return (
     <LogoStyles>
-      <img src="/logo.png" width="110px" height="110px" alt="Logo" />
+      <img src="/logo.png" width="106px" height="106px" alt="Logo" />
     </LogoStyles>
   );
 }
