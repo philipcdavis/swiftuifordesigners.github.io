@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { Image, Box, Text, Flex } from "rebass";
+import Image from "next/image";
+import { Box, Text, Flex } from "rebass";
 import styled from "styled-components";
 import { colors } from "./Utils";
 import { Btn } from "./Button";
