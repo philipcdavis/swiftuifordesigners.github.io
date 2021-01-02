@@ -18,6 +18,7 @@ export const InputLight = styled.input`
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border: 2px solid ${colors.surfaceBorder};
+  -webkit-appearance: none;
 
   &:hover {
     opacity: 1;

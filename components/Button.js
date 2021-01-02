@@ -73,6 +73,11 @@ export const BtnRainbow = styled(Btn)`
 export const BtnInput = styled(Btn).attrs({ as: "input" })`
   -webkit-appearance: none;
   animation: ${colorChange("background")} 10s infinite alternate;
+
+  @media (max-width: 630px) {
+    display: block;
+    width: 100%;
+  }
 `;
 
 const BtnIcon = styled(Icon)`

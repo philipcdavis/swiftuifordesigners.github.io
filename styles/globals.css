@@ -92,3 +92,12 @@ ul {
   list-style-type: none;
   margin: 0;
 }
+
+@media (max-width: 630px) {
+  body {
+    font-size: 1rem;
+  }
+  br {
+    display: none;
+  }
+}

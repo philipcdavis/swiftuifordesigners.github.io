@@ -14,7 +14,7 @@ export default function Home() {
       <GradientBlur />
       <Logo />
       <Box
-        mt={"30px"}
+        mt={"120px"}
         width={["92%"]}
         textAlign="center"
         mx={"auto"}
@@ -31,17 +31,13 @@ export default function Home() {
         </Text>
         <Text mt={4}>
           I’ll be creating SwiftUI resources tailored to designers.
+          <br /> &#32; If you’re getting started or looking to level up, follow
+          along!
         </Text>
-        <Text>
-          If you’re getting started or looking to level up, this is for you.
-        </Text>
+
         <Box mx="auto" mt={3} mb={4} py={3} width={["100%", "500px"]}>
           <SignupForm />
         </Box>
-
-        <Link href="/guide">
-          <Btn color="gray2">Read the Guide</Btn>
-        </Link>
       </Box>
     </>
   );

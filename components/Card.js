@@ -23,7 +23,7 @@ const Card = styled(Box)`
 
 export function SystemCard(props) {
   return (
-    <Box width={[1, 1 / 3]} p={2}>
+    <Box width={[1, 1 / 3]} p={[0, 2]}>
       <Card
         width={[1]}
         p={"24px"}
@@ -53,7 +53,7 @@ export function MediaCard(props) {
   let { color = "lightBlue", url = "#" } = props;
   return (
     <Box width={[1, 1 / 2]} m={0}>
-      <Card mb={5} mx={3} p={0}>
+      <Card mb={5} mx={[0, 3]} p={0}>
         <Image width="400" height="200" src={props.src} />
         <Box pt={20} px={"6px"}>
           <Text

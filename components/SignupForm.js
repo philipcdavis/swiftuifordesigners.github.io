@@ -19,8 +19,13 @@ class SignupForm extends Component {
           target="_blank"
           noValidate
         >
-          <Flex id="mc_embed_signup_scroll" mx="auto">
-            <Box flexGrow={1} mr={2} className="mc-field-group">
+          <Flex id="mc_embed_signup_scroll" mx="auto" flexWrap="wrap">
+            <Box
+              flexGrow={1}
+              mr={[0, 2]}
+              mb={[3, 0]}
+              className="mc-field-group"
+            >
               <InputLight
                 type="email"
                 placeholder="Email Address"

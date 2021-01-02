@@ -103,7 +103,7 @@ export default function Guide() {
           In order to use SwiftUI with live preview you'll need a Mac (or iPad),
           and Xcode.
         </p>
-        <Flex mx={-2} mb={"90px"} flexWrap="wrap">
+        <Flex mx={[0, -2]} mb={"90px"} flexWrap="wrap">
           <SystemCard
             label="MacOS"
             version="10.15+"
@@ -131,7 +131,7 @@ export default function Guide() {
           The videos from WWDC are a great way to get start learning SwiftUI.
           Here are 4 that I found especially helpful.
         </p>
-        <Flex mx={-3} mb={"50px"} flexWrap="wrap">
+        <Flex mx={[0, -3]} mb={"50px"} flexWrap="wrap">
           <MediaCard
             color="lightPurple"
             url="https://developer.apple.com/videos/play/wwdc2020/10119/"
@@ -172,7 +172,7 @@ export default function Guide() {
           apps using SwiftUI.
         </p>
 
-        <Flex mx={-3} mb={"50px"} flexWrap="wrap">
+        <Flex mx={[0, -3]} mb={"50px"} flexWrap="wrap">
           <MediaCard
             color="lightBlue"
             label="Introducing SwiftUI"
@@ -198,7 +198,7 @@ export default function Guide() {
           can be a good starting point and a helpful reference.
         </p>
 
-        <Flex mx={-3} mb={"50px"} flexWrap="wrap">
+        <Flex mx={[0, -3]} mb={"50px"} flexWrap="wrap">
           <MediaCard
             color="lightGreen"
             label="Fruta: An iOS and Mac App"
@@ -215,7 +215,7 @@ export default function Guide() {
           There are a number of wonderful resources created by members of the
           Swift community. Here are two that I found helpful.
         </p>
-        <Flex mx={-3} mb={"50px"} flexWrap="wrap">
+        <Flex mx={[0, -3]} mb={"50px"} flexWrap="wrap">
           <MediaCard
             color="lightYellow"
             src="/hacking-with-swift.png"
@@ -239,9 +239,8 @@ export default function Guide() {
           <h2>SwiftUI Resources for Designers</h2>
           <Text mt={4}>
             I’ll be creating SwiftUI resources tailored to designers.
-          </Text>
-          <Text>
-            If you’re getting started or looking to level up, this is for you.
+            <br /> &#32; If you’re getting started or looking to level up,
+            follow along!
           </Text>
           <Box mx="auto" mt={3} mb={4} py={3} width={["100%", "500px"]}>
             <SignupForm />
