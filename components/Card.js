@@ -23,35 +23,36 @@ const Card = styled(Box)`
 
 export function SystemCard(props) {
   return (
-    <Card
-      width={[1 / 3]}
-      p={"24px"}
-      sx={{
-        borderRadius: "16px",
-        boxShadow: `inset 0 0 0 2px ${colors.cardShadow}, 0 8px 8px -6px ${colors.cardShadow};`,
-      }}
-      textAlign="center"
-      mx={2}
-      mb={5}
-    >
-      <Text mb={-2} fontSize={3} fontWeight="600">
-        {props.label}
-      </Text>
-      <Text mb={2} color={colors.primaryText} fontSize={6} fontWeight="bold">
-        {props.version}
-      </Text>
+    <Box width={[1, 1 / 3]} p={2}>
+      <Card
+        width={[1]}
+        p={"24px"}
+        sx={{
+          borderRadius: "16px",
+          boxShadow: `inset 0 0 0 2px ${colors.cardShadow}, 0 8px 8px -6px ${colors.cardShadow};`,
+        }}
+        textAlign="center"
+        mb={2}
+      >
+        <Text mb={-2} fontSize={3} fontWeight="600">
+          {props.label}
+        </Text>
+        <Text mb={2} color={colors.primaryText} fontSize={6} fontWeight="bold">
+          {props.version}
+        </Text>
 
-      <Btn color="lightRed" display="block">
-        {props.button}
-      </Btn>
-    </Card>
+        <Btn color="lightRed" display="block">
+          {props.button}
+        </Btn>
+      </Card>
+    </Box>
   );
 }
 
 export function MediaCard(props) {
   let { color = "lightBlue", url = "#" } = props;
   return (
-    <Box width={[1 / 2]} m={0}>
+    <Box width={[1, 1 / 2]} m={0}>
       <Card mb={5} mx={3} p={0}>
         <Image width="400" height="200" src={props.src} />
         <Box pt={20} px={"6px"}>

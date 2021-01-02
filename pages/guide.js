@@ -103,7 +103,7 @@ export default function Guide() {
           In order to use SwiftUI with live preview you'll need a Mac (or iPad),
           and Xcode.
         </p>
-        <Flex mx={-2} mb={"50px"}>
+        <Flex mx={-2} mb={"50px"} flexWrap="wrap">
           <SystemCard
             label="MacOS"
             version="10.15+"
