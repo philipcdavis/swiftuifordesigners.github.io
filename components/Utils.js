@@ -1,30 +1,30 @@
 import { keyframes } from "styled-components";
 
 export const colors = {
-  white: "#ffffff",
-  red: "#EF4343",
-  purple: "#9000FF",
-  blue: "#0086FF",
-  teal: "#7DE9FF",
-  green: "#54EB78",
-  yellow: "#FFD700",
-  lightRed: "#FDC9C9",
-  lightPurple: "#DFB7FF",
-  lightBlue: "#B8E8FF",
-  lightGreen: "#80F6A1",
-  lightYellow: "#FFDA8C",
-  surfaceBackground: "white",
-  surfaceHighlight: "#EFF3F5",
-  surfaceBorder: "#DDE5EA",
-  surfaceBorderHighlight: "#C1CACF",
-  cardShadow: "rgba(204,216,223,0.50)",
-  primaryText: "#37373C",
-  secondaryText: "#7C7C84",
-  placeholderText: "#6B767D",
-  twitterBlue: "#1D9DFF",
-  gray1: "#EFF3F5",
-  gray2: "#DDE5EA",
-  gray3: "#B7C5CD",
+  white: "var(--white)",
+  red: "var(--red)",
+  purple: "var(--purple)",
+  blue: "var(--blue)",
+  teal: "var(--teal)",
+  green: "var(--green)",
+  yellow: "var(--yellow)",
+  lightRed: "var(--lightRed)",
+  lightPurple: "var(--lightPurple)",
+  lightBlue: "var(--lightBlue)",
+  lightGreen: "var(--lightGreen)",
+  lightYellow: "var(--lightYellow)",
+  surfaceBackground: "var(--surfaceBackground)",
+  surfaceHighlight: "var(--surfaceHighlight)",
+  surfaceBorder: "var(--surfaceBorder)",
+  surfaceBorderHighlight: "var(--surfaceBorderHighlight)",
+  cardShadow: "var(--cardShadow)",
+  primaryText: "var(--primaryText)",
+  secondaryText: "var(--secondaryText)",
+  placeholderText: "var(--placeholderText)",
+  twitterBlue: "var(--twitterBlue)",
+  gray1: "var(--gray1)",
+  gray2: "var(--gray2)",
+  gray3: "var(--gray3)",
 };
 
 export const space = [0, 8, 16, 32, 64, 128, 256, 512];
@@ -47,11 +47,11 @@ export const isDarkBackground = function (color) {
 
 export function colorChange(type, opacity = 1) {
   return keyframes`
-    0% { ${type}: ${hexToRGB(colors.lightPurple, opacity)}; }
-    25%  { ${type}: ${hexToRGB(colors.lightRed, opacity)}; }
-    50% { ${type}: ${hexToRGB(colors.lightYellow, opacity)}; }
-    75% { ${type}: ${hexToRGB(colors.lightGreen, opacity)}; }
-    100% { ${type}: ${hexToRGB(colors.lightBlue, opacity)}; }
+    0% { ${type}: ${hexToRGB("#dfb7ff", opacity)}; }
+    25%  { ${type}: ${hexToRGB("#fdc9c9", opacity)}; }
+    50% { ${type}: ${hexToRGB("#ffda8c", opacity)}; }
+    75% { ${type}: ${hexToRGB("#80f6a1", opacity)}; }
+    100% { ${type}: ${hexToRGB("#b8e8ff", opacity)}; }
   `;
 }
 

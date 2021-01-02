@@ -1,8 +1,9 @@
 import Head from "../components/Head";
 import GradientBlur from "../components/GradientBlur";
 import Link from "next/link";
+import Image from "next/image";
 import Logo from "../components/Logo";
-import { Box, Flex, Text } from "rebass";
+import { Box, Flex, Text, Image as Img } from "rebass";
 import { colors } from "../components/Utils";
 import styled from "styled-components";
 import { SystemCard, MediaCard } from "../components/Card";
@@ -22,7 +23,10 @@ const Numeral = styled.div`
 export default function Guide() {
   return (
     <>
-      <Head />
+      <Head
+        title="A Designer's Guide to SwiftUI"
+        description="SwiftUI is a powerful tool for designers. You don't need to be a 10x iOS engineer to extract lots of value from the framework."
+      />
       <GradientBlur />
       <Logo />
       <Box
@@ -42,9 +46,9 @@ export default function Guide() {
         </Text>
 
         <p>
-          SwiftUI is a powerful tool for designers. You don't need to be a
-          traditional iOS engineer to extract lots of value from the framework.
-          Using SwiftUI you can do some truly amazing things.
+          SwiftUI is a powerful tool for designers. You don't need to be a 10x
+          iOS engineer to extract lots of value from the framework. Using
+          SwiftUI you can do some truly amazing things.
         </p>
 
         <ul>
@@ -93,38 +97,73 @@ export default function Guide() {
         </p>
 
         <h2>
-          <Numeral color={colors.lightPurple}>1</Numeral>System Requirements
+          <Numeral color={colors.lightRed}>1</Numeral>System Requirements
         </h2>
         <p>
-          In order to use SwiftUI with live preview you'll need a Mac, and
-          Xcode.
+          In order to use SwiftUI with live preview you'll need a Mac (or iPad),
+          and Xcode.
         </p>
-        <Flex mb={5}>
-          <SystemCard label="MacOS" version="10.15+" button="Check" />
-          <SystemCard label="Xcode" version="11.0+" button="Download" />
+        <Flex mx={-2} mb={"50px"}>
+          <SystemCard
+            label="MacOS"
+            version="10.15+"
+            button="Check"
+            url="https://support.apple.com/en-us/HT201260"
+          />
+          <SystemCard
+            label="iOS App"
+            version="13.0+"
+            button="View"
+            url="https://www.apple.com/swift/playgrounds/"
+          />
+          <SystemCard
+            label="Xcode"
+            version="11.0+"
+            button="Download"
+            url="https://apps.apple.com/us/app/xcode/id497799835?mt=12"
+          />
         </Flex>
 
         <h2>
-          <Numeral color={colors.lightRed}>2</Numeral> WWDC Videos
+          <Numeral color={colors.lightPurple}>2</Numeral> WWDC Videos
         </h2>
         <p>
           The videos from WWDC are a great way to get start learning SwiftUI.
-          Here are 6 that I found especially helpful.
+          Here are 4 that I found especially helpful.
         </p>
-        <Flex mb={5} flexWrap="wrap">
+        <Flex mx={-3} mb={"50px"} flexWrap="wrap">
           <MediaCard
-            label="How to watch a video that is really long"
+            color="lightPurple"
+            url="https://developer.apple.com/videos/play/wwdc2020/10119/"
+            src="/introduction-to-swift-ui.png"
+            label="Introduction to SwiftUI"
             button="Watch"
           />
-          <MediaCard label="MacOS" button="Watch" />
-          <MediaCard label="MacOS" button="Watch" />
-          <MediaCard label="MacOS" button="Watch" />
-          <MediaCard label="MacOS" button="Watch" />
-          <MediaCard label="MacOS" button="Watch" />
+          <MediaCard
+            color="lightPurple"
+            url="https://developer.apple.com/videos/play/wwdc2020/10185/"
+            src="/visually-edit-swiftui-views.png"
+            label="Visually edit SwiftUI views"
+            button="Watch"
+          />
+          <MediaCard
+            color="lightPurple"
+            label="Build SwiftUI views for widgets"
+            src="/build-swift-ui-views-for-widgets.png"
+            url="https://developer.apple.com/videos/play/wwdc2020/10033/"
+            button="Watch"
+          />
+          <MediaCard
+            color="lightPurple"
+            label="Stacks, Grids, and Outlines"
+            src="/stacks-grids-outlines.png"
+            button="Watch"
+            url="https://developer.apple.com/videos/play/wwdc2020/10031/"
+          />
         </Flex>
 
         <h2>
-          <Numeral color={colors.lightYellow}>3</Numeral>Apple's Official
+          <Numeral color={colors.lightBlue}>3</Numeral>Apple's Official
           Tutorials
         </h2>
         <p>
@@ -133,33 +172,71 @@ export default function Guide() {
           apps using SwiftUI.
         </p>
 
-        <Flex mb={5} flexWrap="wrap">
+        <Flex mx={-3} mb={"50px"} flexWrap="wrap">
           <MediaCard
-            label="How to watch a video that is really long"
-            button="Watch"
+            color="lightBlue"
+            label="Introducing SwiftUI"
+            src="/introducing-swiftui.png"
+            button="Start"
+            url="https://developer.apple.com/tutorials/swiftui/"
           />
-          <MediaCard label="MacOS" button="Watch" />
+          <MediaCard
+            color="lightBlue"
+            label="Develop Apps with SwiftUI"
+            src="/developing-apps-with-swiftui.png"
+            button="Start"
+            url="https://developer.apple.com/tutorials/app-dev-training"
+          />
         </Flex>
 
         <h2>
-          <Numeral color={colors.lightGreen}>4</Numeral>Community Resources
+          <Numeral color={colors.lightGreen}>4</Numeral>Examples
+        </h2>
+        <p>
+          There are lots of good example apps by designers in the SwiftUI
+          community. This fully functional iOS and Mac App that Apple provides
+          can be a good starting point for your own project, or just a helpful
+          reference.
+        </p>
+
+        <Flex mx={-3} mb={"50px"} flexWrap="wrap">
+          <MediaCard
+            color="lightGreen"
+            label="Fruta: An iOS and Mac App"
+            src="/fruta.png"
+            button="View"
+            url="https://developer.apple.com/documentation/swiftui/fruta_building_a_feature-rich_app_with_swiftui"
+          />
+        </Flex>
+
+        <h2>
+          <Numeral color={colors.lightYellow}>5</Numeral>Community Resources
         </h2>
         <p>
           There are a number of wonderful resources created by members of the
           Swift community. Here are two that I found helpful.
         </p>
-        <Flex mb={5} flexWrap="wrap">
-          <MediaCard label="Hacking with Swift" button="Watch" />
-          <MediaCard label="Swift by Sundell" button="Watch" />
+        <Flex mx={-3} mb={"50px"} flexWrap="wrap">
+          <MediaCard
+            color="lightYellow"
+            src="/hacking-with-swift.png"
+            label="Hacking with Swift"
+            button="View"
+            url="https://www.hackingwithswift.com"
+          />
+          <MediaCard
+            color="lightYellow"
+            label="Swift by Sundell"
+            src="/swift-by-sundell.png"
+            button="View"
+            url="https://www.swiftbysundell.com"
+          />
         </Flex>
 
         <Box textAlign="center">
-          <h1>
-            <Numeral large color={colors.lightBlue}>
-              5
-            </Numeral>
-          </h1>
-
+          <Box mb={"90px"} ml={"-2px"} opacity={0.4}>
+            <Image src="/Icon.svg" width="37px" height="37px" />
+          </Box>
           <h2>SwiftUI Resources for Designers</h2>
           <Text mt={4}>
             I’ll be creating SwiftUI resources tailored to designers.

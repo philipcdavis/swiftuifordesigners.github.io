@@ -12,6 +12,17 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
+const Overlay = styled.div`
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 640px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+`;
+
 const Canvas = styled.div`
   background: conic-gradient(
     ${colors.yellow},
@@ -27,14 +38,14 @@ const Canvas = styled.div`
   top: 75px;
   position: absolute;
   left: calc(50% - 138px);
-  filter: blur(38px);
-  opacity: 0.4;
+  filter: blur(42px);
 `;
 
 const GradientBlur = () => {
   return (
     <Container>
       <Canvas />
+      <Overlay />
     </Container>
   );
 };

@@ -4,47 +4,14 @@
     <title>Artboard</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <path d="M44.0306526,63.8302013 C32.422022,65.9267665 18.4378381,60.184116 8.71062641,48.17201 C5.15812961,43.7850418 2.54163046,39.0165463 0.868751308,34.1984451 C10.7021329,44.7906578 23.9763426,49.572179 34.9298707,47.1793968 C21.8972743,28.6271627 15.1195528,10.4821137 16.2680503,0.769642923 C21.1227809,10.886469 29.7873113,21.97891 42.2616413,34.046966 C44.2833706,36.00285 46.043137,37.8971117 47.5596932,39.7148743 C54.0477961,32.1495186 55.2893039,20.6235247 51.3813865,9.36823366 C52.1234295,10.1675393 52.8458788,10.9999337 53.5462587,11.8648308 C64.2539261,25.0876988 66.4581053,41.776722 59.9500725,52.842837 C62.1923283,56.4852027 62.9804698,61.0843962 61.76077,65.6363778 C60.9443244,68.6833943 59.3381739,71.2989014 57.2367204,73.3051414 C56.832067,71.6716558 56.1130757,70.1744596 55.059851,68.8738354 C51.774615,64.8169069 49.5146535,62.7963198 44.0310306,63.8307365 Z" id="path-1"></path>
-        <filter x="-95.8%" y="-95.8%" width="291.7%" height="291.7%" filterUnits="objectBoundingBox" id="filter-3">
-            <feGaussianBlur stdDeviation="14.6999997" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-        <filter x="-67.4%" y="-67.4%" width="234.7%" height="234.7%" filterUnits="objectBoundingBox" id="filter-4">
-            <feGaussianBlur stdDeviation="6" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-        <filter x="-28.8%" y="-28.8%" width="157.5%" height="157.5%" filterUnits="objectBoundingBox" id="filter-5">
-            <feGaussianBlur stdDeviation="7" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-        <filter x="-43.7%" y="-43.7%" width="187.3%" height="187.3%" filterUnits="objectBoundingBox" id="filter-6">
-            <feGaussianBlur stdDeviation="12" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-        <filter x="-117.3%" y="-117.3%" width="334.7%" height="334.7%" filterUnits="objectBoundingBox" id="filter-7">
-            <feGaussianBlur stdDeviation="14" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-        <filter x="-55.3%" y="-55.3%" width="210.7%" height="210.7%" filterUnits="objectBoundingBox" id="filter-8">
-            <feGaussianBlur stdDeviation="13" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-        <filter x="-112.4%" y="-112.4%" width="324.8%" height="324.8%" filterUnits="objectBoundingBox" id="filter-9">
-            <feGaussianBlur stdDeviation="8.81999985" in="SourceGraphic"></feGaussianBlur>
-        </filter>
+        <path d="M65.2920078,95.1145719 C47.8068046,98.2724698 26.7434849,89.6227492 12.092121,71.5298215 C6.7412643,64.9220638 2.80022971,57.7396404 0.280498199,50.4824997 C15.0917767,66.4367462 35.0857159,73.6387903 51.5841877,70.0347233 C31.9541723,42.0908948 21.7454026,14.7603784 23.4752977,0.131217599 C30.7876115,15.3694282 43.8383389,32.077134 62.6274798,50.254335 C65.6726579,53.2003353 68.3232609,56.0535185 70.607535,58.791477 C80.3800741,47.3963534 82.2500636,30.0356196 76.3638628,13.0826251 C77.4815461,14.2865588 78.569717,15.5403316 79.6246463,16.8430608 C95.7527966,36.7596678 99.0727852,61.8970824 89.2702271,78.5651354 C92.6475676,84.0513556 93.8346856,90.9787732 91.997544,97.8350791 C90.7677936,102.42457 88.3485705,106.364111 85.1833098,109.385958 C84.573811,106.925562 83.4908487,104.670449 81.904456,102.711417 C76.9561532,96.600772 73.552144,93.5573144 65.2925772,95.1153781 Z" id="path-1"></path>
     </defs>
-    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#FFFFFF" x="0" y="0" width="110" height="110"></rect>
-        <g id="Group" opacity="0.900000036" transform="translate(16.230682, 18.000000)">
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+        <g id="Group" transform="translate(4.634000, 0.000000)">
             <mask id="mask-2" fill="white">
                 <use xlink:href="#path-1"></use>
             </mask>
-            <use id="Mask" fill="#FFFFFF" transform="translate(32.237952, 37.063366) rotate(-360.000000) translate(-32.237952, -37.063366) " xlink:href="#path-1"></use>
-            <g mask="url(#mask-2)" id="Oval">
-                <g transform="translate(-17.036540, -38.678034)">
-                    <circle fill="#0DD163" filter="url(#filter-3)" cx="23.7536002" cy="48.9449011" r="23.005829"></circle>
-                    <circle fill="#20E1FF" filter="url(#filter-4)" cx="27.9831223" cy="72.8588021" r="13.3618855"></circle>
-                    <circle fill="#38B0FF" filter="url(#filter-5)" cx="41.1798283" cy="109.013988" r="36.5084098"></circle>
-                    <circle fill="#FFB92B" filter="url(#filter-6)" cx="61.6372678" cy="41.2248098" r="41.2247375"></circle>
-                    <circle fill="#7F51FF" filter="url(#filter-7)" cx="74.826319" cy="104.902621" r="17.8962793"></circle>
-                    <circle fill="#FF1515" filter="url(#filter-8)" cx="103.348548" cy="65.5723751" r="35.2396189"></circle>
-                    <circle fill="#FFB92B" filter="url(#filter-9)" cx="66.1898005" cy="74.2088936" r="11.7713468"></circle>
-                </g>
-            </g>
+            <use id="Mask" fill="#838383" transform="translate(47.529555, 54.758588) rotate(-360.000000) translate(-47.529555, -54.758588) " xlink:href="#path-1"></use>
         </g>
     </g>
 </svg>

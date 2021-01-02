@@ -9,7 +9,6 @@ export const Btn = styled.button`
   outline: none;
   font-family: inherit;
   backface-visibility: hidden;
-  margin-right: 10px;
   border: none;
   border-radius: 8px;
   transition: 0.1s all ease;
@@ -66,13 +65,14 @@ export const BtnLink = styled(Btn).attrs({ as: "a" })`
   display: inline-block;
 `;
 
-export const BtnRainbow = styled(BtnLink)`
+export const BtnRainbow = styled(Btn)`
   animation: ${colorChange("background")} 10s infinite alternate;
   margin-right: 0;
 `;
 
 export const BtnInput = styled(Btn).attrs({ as: "input" })`
   -webkit-appearance: none;
+  animation: ${colorChange("background")} 10s infinite alternate;
 `;
 
 const BtnIcon = styled(Icon)`
@@ -84,11 +84,11 @@ const BtnIcon = styled(Icon)`
 
 export function BtnTwitter({ children, ...rest }) {
   return (
-    <BtnLink twitter {...rest}>
+    <Btn color="gray1" twitter {...rest}>
       <Flex sx={{ height: "24px" }} alignItems="center">
         <BtnIcon fill={colors.twitterBlue} name="twitter" size={34} />
         {children}
       </Flex>
-    </BtnLink>
+    </Btn>
   );
 }
