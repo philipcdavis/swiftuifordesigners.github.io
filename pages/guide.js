@@ -1,7 +1,7 @@
 import Head from "../components/Head";
 import GradientBlur from "../components/GradientBlur";
 import Link from "next/link";
-// import Image from "next/image";
+import Icon from "../components/Icon";
 import Logo from "../components/Logo";
 import { Box, Flex, Text, Image } from "rebass";
 import { colors } from "../components/Utils";
@@ -233,8 +233,8 @@ export default function Guide() {
         </Flex>
 
         <Box textAlign="center">
-          <Box mb={"90px"} ml={"-2px"} opacity={0.4}>
-            <Image src="/Icon.svg" width="37px" height="37px" />
+          <Box mb={"90px"} ml={"-7px"} opacity={0.4}>
+            <Icon name="logo" size={37} fill={colors.gray4} />
           </Box>
           <h2>SwiftUI Resources for Designers</h2>
           <Text mt={4}>

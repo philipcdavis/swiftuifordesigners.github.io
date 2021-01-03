@@ -25,6 +25,7 @@ export const colors = {
   gray1: "var(--gray1)",
   gray2: "var(--gray2)",
   gray3: "var(--gray3)",
+  gray4: "var(--gray4)",
 };
 
 export const space = [0, 8, 16, 32, 64, 128, 256, 512];
