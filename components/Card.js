@@ -7,13 +7,8 @@ import { colors } from "./Utils";
 import { Btn } from "./Button";
 
 const Card = styled(Box)`
-  background-color: ${colors.surfaceBackground};
-  /* box-shadow: inset 0 0 0 2px ${colors.cardShadow},
-    0 8px 8px -6px ${colors.cardShadow}; */
-  /* border-radius: 16px; */
+  background-color: ${colors.surfaceBackground};/
   display: inline-block;
-  /* padding: 24px; */
-  /* margin-right: 8px; */
   overflow: hidden;
 
   & img {
@@ -32,7 +27,7 @@ export function SystemCard(props) {
           boxShadow: `inset 0 0 0 2px ${colors.cardShadow}, 0 8px 8px -6px ${colors.cardShadow};`,
         }}
         textAlign="center"
-        mb={2}
+        mb={[3, 2]}
       >
         <Text mb={-2} fontSize={3} fontWeight="600">
           {props.label}
