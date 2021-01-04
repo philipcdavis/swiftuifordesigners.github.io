@@ -24,7 +24,7 @@ export default function Guide() {
   return (
     <>
       <Head
-        title="A Designer's Guide to SwiftUI"
+        title="A Designer’s Guide to SwiftUI"
         description="SwiftUI is a powerful tool for designers. You don't need to be a 10x
           engineer to get a lot from the framework."
       />
@@ -43,7 +43,7 @@ export default function Guide() {
           fontSize={[3, 5]}
           fontWeight="700"
         >
-          A Designer's Guide to SwiftUI
+          A Designer’s Guide to SwiftUI
         </Text>
 
         <p>

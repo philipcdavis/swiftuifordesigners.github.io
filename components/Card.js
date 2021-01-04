@@ -28,6 +28,7 @@ export function SystemCard(props) {
           boxShadow: `inset 0 0 0 2px ${colors.cardShadow}, 0 8px 8px -6px ${colors.cardShadow};`,
         }}
         textAlign="center"
+        mx="auto"
         mb={[3, 2]}
       >
         <Text mb={-2} fontSize={3} fontWeight="600">
