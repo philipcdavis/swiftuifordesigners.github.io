@@ -25,7 +25,8 @@ export default function Guide() {
     <>
       <Head
         title="A Designer's Guide to SwiftUI"
-        description="SwiftUI is a powerful tool for designers. You don't need to be a 10x iOS engineer to extract lots of value from the framework."
+        description="SwiftUI is a powerful tool for designers. You don't need to be a 10x
+          engineer to get a lot from the framework."
       />
       <GradientBlur />
       <Logo />
@@ -47,21 +48,21 @@ export default function Guide() {
 
         <p>
           SwiftUI is a powerful tool for designers. You don't need to be a 10x
-          iOS engineer to extract lots of value from the framework. Using
-          SwiftUI you can do some truly amazing things.
+          engineer to get a lot from the framework. Using SwiftUI you can do
+          some truly amazing things.
         </p>
 
         <ul>
           <li>You can build fully functional apps.</li>
-          <li>
-            You can create interruptable animations and advanced prototypes.
-          </li>
           <li>
             You can work closer with engineering to get the design details just
             right.
           </li>
           <li>You can compose components to build advanced layouts.</li>
           <li>You can create reusable components and styles.</li>
+          <li>
+            You can create interruptable animations and advanced prototypes.
+          </li>
         </ul>
 
         <p>SwiftUI is a design tool from the future.</p>
@@ -69,14 +70,14 @@ export default function Guide() {
         <p>
           SwiftUI is built on the Swift programming language. A driving
           principle of the Swift language is that it progressively discloses
-          complexity. This means you can get started with little programming
-          experience, but won't be hampered when you need advanced
-          functionality. It's a great starter coding language.
+          complexity. You can get started with little programming experience,
+          but won't get stuck when you need advanced functionality. It's a great
+          starter coding language.
         </p>
         <p>
-          SwiftUI came with an update to Xcode called Live Preview. Prior to
-          Live Preview you needed to build your app each time you wanted to view
-          a UI change. While this is fine for many software engineers, it makes
+          SwiftUI came with an update to Xcode called Live Preview. Before Live
+          Preview you needed to build your app each time you wanted to view a UI
+          change. While this is fine for many software engineers, it makes
           visual changes slow and tedious. SwiftUI came with a visual
           representation of your views that updated in real time, similar to
           other design tools.
@@ -93,7 +94,7 @@ export default function Guide() {
         </Text>
         <p>
           If you're interested in getting started with SwiftUI below are some
-          tools, resources, and guides to get started.
+          resources to help you get started.
         </p>
 
         <h2>
@@ -129,7 +130,7 @@ export default function Guide() {
         </h2>
         <p>
           The videos from WWDC are a great way to get start learning SwiftUI.
-          Here are 4 that I found especially helpful.
+          Here are 4 that I found especially helpful for designers.
         </p>
         <Flex mx={[0, -3]} mb={"50px"} flexWrap="wrap">
           <MediaCard
@@ -212,8 +213,9 @@ export default function Guide() {
           <Numeral color={colors.lightYellow}>5</Numeral>Community Resources
         </h2>
         <p>
-          There are a number of wonderful resources created by members of the
-          Swift community. Here are two that I found helpful.
+          There are many wonderful resources created by members of the Swift
+          community. Here are two that have excellent articles, interviews, and
+          videos.
         </p>
         <Flex mx={[0, -3]} mb={"50px"} flexWrap="wrap">
           <MediaCard
