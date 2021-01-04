@@ -191,12 +191,12 @@ export default function Guide() {
         </Flex>
 
         <h2>
-          <Numeral color={colors.lightGreen}>4</Numeral>App Examples
+          <Numeral color={colors.lightGreen}>4</Numeral> App Examples
         </h2>
         <p>
-          There are lots of good example apps by designers in the SwiftUI
-          community. This fully functional iOS and Mac App that Apple provides
-          can be a good starting point and a helpful reference.
+          Example apps are a wonderful learning tool. This fully functional app
+          that Apple provides could be a good starting point and helpful
+          reference.
         </p>
 
         <Flex mx={[0, -3]} mb={"50px"} flexWrap="wrap">
