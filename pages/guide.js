@@ -214,8 +214,8 @@ export default function Guide() {
         </h2>
         <p>
           There are lots of good resources created by people in the Swift
-          community. Here are two that have excellent articles, interviews, and
-          videos.
+          community. Here are two that have excellent interviews, articles,
+          documentation, and videos.
         </p>
         <Flex mx={[0, -3]} mb={"50px"} flexWrap="wrap">
           <MediaCard
