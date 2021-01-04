@@ -11,9 +11,9 @@ const Head = function (props) {
   return (
     <>
       <NextHead>
-        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-        <link rel="apple-touch-icon" href="/icon.png" />
-        <link rel="mask-icon" href="/icon.svg" color="#5D626E" />
+        <link rel="icon" type="image/svg+xml" href="/icon.svg?v=4" />
+        <link rel="apple-touch-icon" href="/icon.png?v=4" />
+        <link rel="mask-icon" href="/icon.svg?v=4" color="#858A96" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </NextHead>
       <NextSeo

@@ -36,10 +36,13 @@ export function SystemCard(props) {
         <Text mb={2} color={colors.primaryText} fontSize={6} fontWeight="bold">
           {props.version}
         </Text>
-
-        <Btn color="lightRed" display="block">
-          {props.button}
-        </Btn>
+        <Link href={props.url}>
+          <a target="_blank">
+            <Btn color="lightRed" display="block">
+              {props.button}
+            </Btn>
+          </a>
+        </Link>
       </Card>
     </Box>
   );

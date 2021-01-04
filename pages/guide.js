@@ -213,7 +213,7 @@ export default function Guide() {
           <Numeral color={colors.lightYellow}>5</Numeral>Community Resources
         </h2>
         <p>
-          There are many wonderful resources created by members of the Swift
+          There are lots of good resources created by people in the Swift
           community. Here are two that have excellent articles, interviews, and
           videos.
         </p>
