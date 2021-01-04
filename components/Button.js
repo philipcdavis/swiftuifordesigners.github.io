@@ -4,6 +4,7 @@ import { Flex } from "rebass";
 import { colors, space, colorChange, fontSize } from "./Utils";
 
 export const Btn = styled.button`
+  color: ${colors.primaryText};
   position: relative;
   overflow: hidden;
   outline: none;
@@ -20,6 +21,10 @@ export const Btn = styled.button`
 
   font-size: ${fontSize[1]};
   padding: ${space[2] + "px"} ${space[3] + "px"};
+
+  &:active {
+    color: ${colors.primaryText};
+  }
 
   ${(props) =>
     props.size === "lg" &&

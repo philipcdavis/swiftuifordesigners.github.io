@@ -23,6 +23,7 @@ export function SystemCard(props) {
         width={[1]}
         p={"24px"}
         sx={{
+          maxWidth: 250,
           borderRadius: "16px",
           boxShadow: `inset 0 0 0 2px ${colors.cardShadow}, 0 8px 8px -6px ${colors.cardShadow};`,
         }}
