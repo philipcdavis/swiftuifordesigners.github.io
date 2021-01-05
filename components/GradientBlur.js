@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { colors } from "./Utils";
+import { colors, hexToRGB } from "./Utils";
 
 const Container = styled.div`
   position: absolute;
@@ -20,7 +20,7 @@ const Overlay = styled.div`
   right: 0;
   height: 640px;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: var(--gradientOverlay);
 `;
 
 const Canvas = styled.div`

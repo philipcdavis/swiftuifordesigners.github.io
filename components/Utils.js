@@ -22,10 +22,16 @@ export const colors = {
   secondaryText: "var(--secondaryText)",
   placeholderText: "var(--placeholderText)",
   twitterBlue: "var(--twitterBlue)",
+  gradientOverlay: "var(--gradientOverlay)",
+  buttonLabel: "var(--buttonLabel)",
   gray1: "var(--gray1)",
   gray2: "var(--gray2)",
   gray3: "var(--gray3)",
   gray4: "var(--gray4)",
+  logoShadow1: "var(--logoShadow1)",
+  logoShadow2: "var(--logoShadow2)",
+  logoShadow3: "var(--logoShadow3)",
+  logoShadow4: "var(--logoShadow4)",
 };
 
 export const space = [0, 8, 16, 32, 64, 128, 256, 512];
@@ -37,7 +43,8 @@ export const isDarkBackground = function (color) {
     if (
       color.includes("black") ||
       color.includes("gray2") ||
-      color.includes("gray3")
+      color.includes("gray3") ||
+      color.includes("gray1")
     ) {
       return true;
     } else {
@@ -48,11 +55,11 @@ export const isDarkBackground = function (color) {
 
 export function colorChange(type, opacity = 1) {
   return keyframes`
-    0% { ${type}: ${hexToRGB("#dfb7ff", opacity)}; }
-    25%  { ${type}: ${hexToRGB("#fdc9c9", opacity)}; }
-    50% { ${type}: ${hexToRGB("#ffda8c", opacity)}; }
+    0% { ${type}: ${hexToRGB("#ff5f5f", opacity)}; }
+    25%  { ${type}: ${hexToRGB("#bd6dff", opacity)}; }
+    50% { ${type}: ${hexToRGB("#65adff", opacity)}; }
     75% { ${type}: ${hexToRGB("#80f6a1", opacity)}; }
-    100% { ${type}: ${hexToRGB("#b8e8ff", opacity)}; }
+    100% { ${type}: ${hexToRGB("#ffd359", opacity)}; }
   `;
 }
 

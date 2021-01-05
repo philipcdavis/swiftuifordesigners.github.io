@@ -1,10 +1,17 @@
 import styled, { css } from "styled-components";
 import Icon from "./Icon";
 import { Flex } from "rebass";
-import { colors, space, colorChange, fontSize } from "./Utils";
+import {
+  colors,
+  space,
+  colorChange,
+  fontSize,
+  isDarkBackground,
+} from "./Utils";
 
 export const Btn = styled.button`
-  color: ${colors.primaryText};
+  color: ${(props) =>
+    isDarkBackground(props.color) ? colors.primaryText : colors.buttonLabel};
   position: relative;
   overflow: hidden;
   outline: none;
@@ -23,7 +30,7 @@ export const Btn = styled.button`
   padding: ${space[2] + "px"} ${space[3] + "px"};
 
   &:active {
-    color: ${colors.primaryText};
+    color: ${colors.buttonLabel};
   }
 
   ${(props) =>
@@ -71,13 +78,16 @@ export const BtnLink = styled(Btn).attrs({ as: "a" })`
 `;
 
 export const BtnRainbow = styled(Btn)`
+  background-color: var(--lightPurple);
   animation: ${colorChange("background")} 10s infinite alternate;
   margin-right: 0;
 `;
 
 export const BtnInput = styled(Btn).attrs({ as: "input" })`
+  background: var(--lightPurple);
   -webkit-appearance: none;
-  animation: ${colorChange("background")} 10s infinite alternate;
+  animation: ${colorChange("background", "var(--rainbowButtonOpacity)")} 10s
+    infinite alternate;
 
   @media (max-width: 630px) {
     display: block;

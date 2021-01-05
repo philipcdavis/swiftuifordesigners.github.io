@@ -18,6 +18,7 @@ const Numeral = styled.div`
   text-align: center;
   margin-right: ${(props) => (props.large ? 0 : 16)}px;
   font-weight: bold;
+  color: ${colors.buttonLabel};
 `;
 
 export default function Guide() {

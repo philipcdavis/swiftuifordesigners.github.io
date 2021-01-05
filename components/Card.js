@@ -1,13 +1,12 @@
 import React from "react";
 import Link from "next/link";
-// import Image from "next/image";
 import { Box, Text, Flex, Image } from "rebass";
 import styled from "styled-components";
 import { colors } from "./Utils";
 import { Btn } from "./Button";
 
 const Card = styled(Box)`
-  background-color: ${colors.surfaceBackground};/
+  background-color: ${colors.surfaceBackground};
   display: inline-block;
   overflow: hidden;
 
@@ -25,7 +24,7 @@ export function SystemCard(props) {
         sx={{
           maxWidth: 250,
           borderRadius: "16px",
-          boxShadow: `inset 0 0 0 2px ${colors.cardShadow}, 0 8px 8px -6px ${colors.cardShadow};`,
+          boxShadow: `inset 0 0 0 2px ${colors.surfaceBorder}, 0 8px 8px -6px ${colors.cardShadow};`,
         }}
         textAlign="center"
         mx="auto"
