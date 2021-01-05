@@ -17,7 +17,7 @@ const LogoStyles = styled.div`
     height: 106px;
     box-shadow: 0 0 9px 0 ${colors.logoShadow2},
       0 2px 59px 0 ${colors.logoShadow3}, 0 12px 10px -7px ${colors.logoShadow4};
-    border-radius: 24px;
+    border-radius: 26px;
     position: absolute;
     top: 0;
     right: 0;
