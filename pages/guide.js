@@ -83,6 +83,17 @@ export default function Guide() {
           representation of your views that updated in real time, similar to
           other design tools.
         </p>
+        <Box textAlign="center">
+          <h2>SwiftUI Resources for Designers</h2>
+          <Text mt={4}>
+            I’ll be emailing SwiftUI resources tailored to designers.
+            <br /> &#32; If you’re getting started or looking to level up,
+            subscribe below.
+          </Text>
+          <Box mx="auto" mt={3} mb={4} py={3} width={["100%", "500px"]}>
+            <SignupForm />
+          </Box>
+        </Box>
         <hr />
         <Text
           color={colors.primaryText}
@@ -241,9 +252,9 @@ export default function Guide() {
           </Box>
           <h2>SwiftUI Resources for Designers</h2>
           <Text mt={4}>
-            I’ll be creating SwiftUI resources tailored to designers.
+            I’ll be emailing SwiftUI resources tailored to designers.
             <br /> &#32; If you’re getting started or looking to level up,
-            follow along!
+            subscribe below.
           </Text>
           <Box mx="auto" mt={3} mb={4} py={3} width={["100%", "500px"]}>
             <SignupForm />
