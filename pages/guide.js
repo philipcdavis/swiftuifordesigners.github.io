@@ -4,7 +4,7 @@ import Link from "next/link";
 import Icon from "../components/Icon";
 import Logo from "../components/Logo";
 import { Box, Flex, Text, Image } from "rebass";
-import { colors } from "../components/Utils";
+import { colors, colorChange } from "../components/Utils";
 import styled from "styled-components";
 import { SystemCard, MediaCard } from "../components/Card";
 import { BtnTwitter } from "../components/Button";
@@ -19,6 +19,17 @@ const Numeral = styled.div`
   margin-right: ${(props) => (props.large ? 0 : 16)}px;
   font-weight: bold;
   color: ${colors.buttonLabel};
+`;
+
+const Hr = styled.hr`
+  width: 60%;
+  margin-top: 13%;
+  margin-bottom: 13%;
+  border: none;
+  animation: ${colorChange("border-color")} 10s infinite alternate;
+  border-bottom: 2px solid ${colors.gray2};
+  opacity: 0.5;
+  border-radius: 3px;
 `;
 
 export default function Guide() {
@@ -94,7 +105,7 @@ export default function Guide() {
             <SignupForm />
           </Box>
         </Box>
-        <hr />
+        <Hr />
         <Text
           color={colors.primaryText}
           mb={5}

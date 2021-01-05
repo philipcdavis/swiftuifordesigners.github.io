@@ -92,16 +92,6 @@ a {
   box-sizing: border-box;
 }
 
-hr {
-  width: 60%;
-  margin-top: 15%;
-  margin-bottom: 13%;
-  border: none;
-  border-bottom: 2px solid var(--lightRed);
-  opacity: 0.5;
-  border-radius: 3px;
-}
-
 h1 {
   font-size: 1.4em;
   text-align: center;
