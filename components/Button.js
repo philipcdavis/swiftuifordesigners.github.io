@@ -18,7 +18,7 @@ export const Btn = styled.button`
   font-family: inherit;
   backface-visibility: hidden;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   transition: 0.1s all ease;
   user-select: none;
   font-weight: bold;
@@ -68,7 +68,6 @@ export const Btn = styled.button`
 
   &:hover {
     cursor: pointer;
-    opacity: 0.9;
   }
 `;
 
@@ -83,15 +82,33 @@ export const BtnRainbow = styled(Btn)`
   margin-right: 0;
 `;
 
-export const BtnInput = styled(Btn).attrs({ as: "input" })`
-  background: var(--lightPurple);
-  -webkit-appearance: none;
-  animation: ${colorChange("background", "var(--rainbowButtonOpacity)")} 10s
-    infinite alternate;
+export const BtnInput = styled(Btn)`
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  background: var(--white);
+  overflow: visible;
+  opacity: 1;
+  margin: 0;
 
-  @media (max-width: 630px) {
-    display: block;
+  &::before {
+    content: "";
+    opacity: 1;
+    position: absolute;
     width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 0 8px rgba(0, 0, 0, 1);
+    mix-blend-mode: overlay;
+  }
+
+  &:hover {
+    opacity: 1;
+    color: var(--secondaryText);
   }
 `;
 
@@ -104,7 +121,7 @@ const BtnIcon = styled(Icon)`
 
 export function BtnTwitter({ children, ...rest }) {
   return (
-    <Btn color="gray1" twitter {...rest}>
+    <Btn color="lightBlue" twitter {...rest}>
       <Flex sx={{ height: "24px" }} alignItems="center">
         <BtnIcon fill={colors.twitterBlue} name="twitter" size={34} />
         {children}

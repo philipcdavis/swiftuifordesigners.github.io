@@ -1,6 +1,6 @@
 :root {
   --white: #ffffff;
-  --charcoal: #1c1e23;
+  --charcoal: #3b3b41;
   --red: #ef4343;
   --purple: #9000ff;
   --blue: #0086ff;
@@ -12,17 +12,19 @@
   --lightBlue: #b8e8ff;
   --lightGreen: #80f6a1;
   --lightYellow: #ffda8c;
-  --surfaceBackground: white;
+  --surfaceBackground: #fffdfb;
   --surfaceHighlight: #eff3f5;
   --surfaceBorder: #dde5ea;
   --surfaceBorderHighlight: #c1cacf;
   --cardShadow: rgba(204, 216, 223, 0.5);
   --cardBackground: var(--surfaceBackground);
-  --primaryText: #37373c;
-  --secondaryText: #7c7c84;
-  --placeholderText: #6b767d;
+  --primaryText: #3b3b41;
+  --secondaryText: #707081;
+  --placeholderText: rgba(102, 45, 45, 0.6);
+  --inputLightBackground: rgba(236, 225, 213, 0.75);
+  --inputLightHighlight: rgba(189, 177, 165, 0.75);
   --twitterBlue: #1d9dff;
-  --gradientOverlay: rgba(255, 255, 255, 0.5);
+  --gradientOverlay: rgba(255, 253, 251, 0.5);
   --buttonLabel: var(--charcoal);
   --gray1: #eff3f5;
   --gray2: #dde5ea;
