@@ -7,14 +7,13 @@ const LogoStyles = styled.div`
   height: 84px;
   width: 84px;
   border-radius: 24px;
-  background: white;
-  border: 2px solid #f6e8da;
-  box-shadow: 0 1px 10px 0 #f5efe8;
+  background: var(--logoBackground);
+  box-shadow: 0 2px 4px 0 var(--simpleLogoShadow1),0 2px 18px 0 var(--simpleLogoShadow2);
 
   & .logo-bird {
     position: absolute;
-    left: 12px;
-    top: 11px;
+    left: 14px;
+    top: 12px;
   }
 `;
 

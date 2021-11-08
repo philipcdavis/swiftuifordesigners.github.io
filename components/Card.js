@@ -16,7 +16,7 @@ const Card = styled(Box)`
 `;
 
 const CroppedImage = styled(Box)`
-  height: 430px;
+  height: 380px;
   width: 100%;
   background-position: center center;
   background-size: cover;
@@ -27,7 +27,8 @@ const CroppedImage = styled(Box)`
 
 export function SystemCard(props) {
   return (
-    <Box width={[1, 1 / 3]}>
+    
+    <Box width={[1, 1 / 3]} p={[0, 2]}>
       <Card
         width={[1]}
         p={"24px"}
@@ -90,7 +91,7 @@ export function MediaCard(props) {
 export function ExampleCard(props) {
   let { color = "lightRed", url = "#" } = props;
   return (
-    <Box width={[1, 1, 1, 1 / 2, 1 / 2]} m={0}>
+    <Box width={[1, 1, 1 / 2]} m={0}>
       <Card width={1} mb={5} px={2}>
         <CroppedImage width={1} src={props.src} />
         <Box pt={20} px={"6px"}>

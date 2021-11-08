@@ -5,17 +5,14 @@ export const InputLight = styled.input`
   background: var(--inputLightBackground);
   font-family: inherit;
   margin: 0;
-  padding: ${space[2] + 2 + "px"};
+  padding: 20px;
   padding-right: 140px;
   font-size: ${19}px;
-  border: 2px solid var(--inputLightBackground);
+  border: 0 solid var(--inputLightBackground);
   outline: none;
   color: ${colors.primaryText};
   width: 100%;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-radius: 10px;
   -webkit-appearance: none;
 
   &:hover {

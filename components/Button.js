@@ -86,10 +86,11 @@ export const BtnInput = styled(Btn)`
   position: absolute;
   right: 6px;
   top: 6px;
-  background: var(--white);
+  background: var(--inputButtonBackground);
   overflow: visible;
   opacity: 1;
   margin: 0;
+  color: var(--inputButtonText);
 
   &::before {
     content: "";
@@ -102,13 +103,14 @@ export const BtnInput = styled(Btn)`
     right: 0;
     bottom: 0;
     border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 0 8px rgba(0, 0, 0, 1);
+    box-shadow: 0 2px 4px var(--inputButtonShadow),
+      0 0 8px var(--inputButtonShadow);
     mix-blend-mode: overlay;
   }
 
   &:hover {
     opacity: 1;
-    color: var(--secondaryText);
+    color: var(--gray0);
   }
 `;
 
@@ -123,7 +125,7 @@ export function BtnTwitter({ children, ...rest }) {
   return (
     <Btn color="lightBlue" twitter {...rest}>
       <Flex sx={{ height: "24px" }} alignItems="center">
-        <BtnIcon fill={colors.twitterBlue} name="twitter" size={34} />
+        <BtnIcon fill={colors.twitterIcon} name="twitter" size={34} />
         {children}
       </Flex>
     </Btn>
