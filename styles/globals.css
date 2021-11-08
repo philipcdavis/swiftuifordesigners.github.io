@@ -1,6 +1,7 @@
 :root {
   --white: #ffffff;
-  --charcoal: #1c1e23;
+  --charcoalRGB: 12, 12, 12;
+  --charcoal: rgb(var(--charcoalRGB));
   --red: #ef4343;
   --purple: #9000ff;
   --blue: #0086ff;
@@ -12,18 +13,23 @@
   --lightBlue: #b8e8ff;
   --lightGreen: #80f6a1;
   --lightYellow: #ffda8c;
-  --surfaceBackground: white;
+  --surfaceBackground: #fffdfb;
   --surfaceHighlight: #eff3f5;
   --surfaceBorder: #dde5ea;
   --surfaceBorderHighlight: #c1cacf;
   --cardShadow: rgba(204, 216, 223, 0.5);
   --cardBackground: var(--surfaceBackground);
-  --primaryText: #37373c;
-  --secondaryText: #7c7c84;
-  --placeholderText: #6b767d;
-  --twitterBlue: #1d9dff;
-  --gradientOverlay: rgba(255, 255, 255, 0.5);
+  --primaryText: #3b3b41;
+  --secondaryText: #707081;
+  --placeholderText: rgba(118, 52, 52, 0.57);
+  --inputLightBackground: rgb(255, 235, 215, 1);
+  --inputLightHighlight: rgba(189, 177, 165, 0.75);
+  --twitterIcon: #1d9dff;
+  --gradientOverlay: rgba(255, 253, 251, 0.5);
   --buttonLabel: var(--charcoal);
+  --inputButtonBackground: var(--white);
+  --inputButtonShadow: rgba(0, 0, 0, 1);
+  --inputButtonText: var(--primaryText);
   --gray1: #eff3f5;
   --gray2: #dde5ea;
   --gray3: #b7c5cd;
@@ -31,10 +37,13 @@
   --lg: 800px;
   --small: 600px;
   --rainbowButtonOpacity: 0.4;
+  --logoBackground: var(--white);
   --logoShadow1: rgba(0, 0, 0, 0.2);
   --logoShadow2: rgba(0, 0, 0, 0.5);
   --logoShadow3: rgba(0, 0, 0, 0.6);
   --logoShadow4: rgba(0, 0, 0, 0.8);
+  --simpleLogoShadow1: rgba(255, 240, 225, 1);
+  --simpleLogoShadow2: rgba(255, 240, 225, 1);
   --top: #ffffff;
   --bottom: #dcf1ff;
 }
@@ -43,8 +52,8 @@
   :root {
     --surfaceBackground: var(--charcoal);
     --primaryText: var(--white);
-    --secondaryText: #afafbb;
-    --gradientOverlay: rgba(28, 30, 35, 0.5);
+    --secondaryText: #9b9ba3;
+    --gradientOverlay: rgba(var(--charcoalRGB), 0.65);
 
     --lightRed: #ff5f5f;
     --lightPurple: #bd6dff;
@@ -54,6 +63,13 @@
     --rainbowButtonOpacity: 1;
     --surfaceBorderHighlight: rgb(93, 100, 104);
 
+    --inputLightBackground: rgba(236, 225, 213, 0.08);
+    --inputLightHighlight: rgba(189, 177, 165, 0.3);
+    --placeholderText: rgba(171, 170, 170, 0.5);
+    --inputButtonBackground: var(--gray4);
+    --inputButtonShadow: rgba(0, 0, 0, 0);
+    --inputButtonText: var(--charcoal);
+
     --surfaceBorder: #4c5053;
     --cardShadow: transparent;
 
@@ -62,12 +78,17 @@
     --gray2: #b7c5cd;
     --gray1: #3c4047;
 
+    --logoBackground: linear-gradient(#232326, #161515);
     --logoShadow1: rgba(0, 0, 0, 0.2);
     --logoShadow2: rgba(255, 255, 255, 0);
     --logoShadow3: rgba(255, 255, 255, 1);
     --logoShadow4: rgba(0, 0, 0, 0.3);
+    --simpleLogoShadow1: rgba(2, 2, 3, 0);
+    --simpleLogoShadow2: rgba(2, 2, 4, 0.6);
     --top: #2a2a2a;
     --bottom: #151516;
+
+    --twitterIcon: var(--charcoal);
   }
 }
 

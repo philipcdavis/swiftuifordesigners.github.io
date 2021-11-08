@@ -21,7 +21,7 @@ export const colors = {
   primaryText: "var(--primaryText)",
   secondaryText: "var(--secondaryText)",
   placeholderText: "var(--placeholderText)",
-  twitterBlue: "var(--twitterBlue)",
+  twitterIcon: "var(--twitterIcon)",
   gradientOverlay: "var(--gradientOverlay)",
   buttonLabel: "var(--buttonLabel)",
   gray1: "var(--gray1)",

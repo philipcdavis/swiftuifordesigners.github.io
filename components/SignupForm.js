@@ -19,54 +19,51 @@ class SignupForm extends Component {
           target="_blank"
           noValidate
         >
-          <Flex id="mc_embed_signup_scroll" mx="auto" flexWrap="wrap">
-            <Box
-              flexGrow={1}
-              mr={[0, 2]}
-              mb={[3, 0]}
-              className="mc-field-group"
-            >
-              <InputLight
-                type="email"
-                placeholder="Email Address"
-                name="EMAIL"
-                className="required email"
-                id="mce-EMAIL"
-              />
-              <span id="mce-responses" className="clear">
-                <div
-                  className="response"
-                  id="mce-error-response"
-                  style={{ display: "none" }}
-                ></div>
-                <div
-                  className="response"
-                  id="mce-success-response"
-                  style={{ display: "none" }}
-                ></div>
-              </span>
-
+          <Flex
+            style={{ position: "relative" }}
+            id="mc_embed_signup_scroll"
+            mx="auto"
+            flexWrap="wrap"
+          >
+            <InputLight
+              type="email"
+              placeholder="Email Address"
+              name="EMAIL"
+              className="required email"
+              id="mce-EMAIL"
+            />
+            <span id="mce-responses" className="clear">
               <div
-                style={{ position: "absolute", left: -5000 }}
-                aria-hidden="true"
-              >
-                <input
-                  type="text"
-                  name="b_b371c51eaf9d6296d5d3e9b47_3166fba74d"
-                  tabIndex="-1"
-                  defaultValue=""
-                />
-              </div>
-            </Box>
+                className="response"
+                id="mce-error-response"
+                style={{ display: "none" }}
+              ></div>
+              <div
+                className="response"
+                id="mce-success-response"
+                style={{ display: "none" }}
+              ></div>
+            </span>
+
+            <div
+              style={{ position: "absolute", left: -5000 }}
+              aria-hidden="true"
+            >
+              <input
+                type="text"
+                name="b_b371c51eaf9d6296d5d3e9b47_3166fba74d"
+                tabIndex="-1"
+                defaultValue=""
+              />
+            </div>
 
             <BtnInput
-              as="input"
-              type="submit"
-              value="Subscribe"
               name="subscribe"
               id="mc-embedded-subscribe"
               className="button"
-            />
+            >
+              Submit
+            </BtnInput>
           </Flex>
         </form>
       </div>
