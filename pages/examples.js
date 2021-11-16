@@ -59,6 +59,18 @@ export default function Guide() {
       >
         <Flex flexWrap={"wrap"} mx={[0, -2]}>
           <ExampleCard
+            headline="Material Effects"
+            url="https://github.com/philipcdavis/swiftui-material-saturation-example"
+            src="https://user-images.githubusercontent.com/3452573/141941248-0c0bbfa2-a042-4a77-bfc9-fca570c8c50c.png"
+          />
+          <ExampleCard
+            headline="Vertical Pages for Swiping"
+            url="https://github.com/philipcdavis/swiftui-vertical-paging-example"
+            src="https://user-images.githubusercontent.com/3452573/141942206-3179461a-a4e2-4fc2-a3e1-0168a5b18f84.gif"
+          />
+        </Flex>
+        <Flex flexWrap={"wrap"} mx={[0, -2]}>
+          <ExampleCard
             headline="Recreating the Path Menu"
             url="https://github.com/philipcdavis/swiftui-pathMenu-example"
             src="https://user-images.githubusercontent.com/3452573/106305828-2fccd180-622b-11eb-8ed8-6c54d983167b.gif"
