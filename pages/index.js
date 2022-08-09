@@ -5,7 +5,7 @@ import LogoSimple from "../components/LogoSimple";
 import { Box, Flex, Text, Image } from "rebass";
 import { colors } from "../components/Utils";
 import { ExampleCard } from "../components/Card";
-import { BtnRainbow } from "../components/Button";
+import { BtnRainbow, BtnNav } from "../components/Button";
 import SignupForm from "../components/SignupForm";
 import PurchaseCard from "../components/PurchaseCard";
 import styled from "styled-components";
@@ -23,14 +23,22 @@ export default function Guide() {
     <>
       <Head title="SwiftUI for Designers" description="Prototype in SwiftUI" />
       <GradientHeader />
-      <Flex mt={[4, "120px"]}>
-        <Box mx={"auto"}>
-          <LogoSimple />
-        </Box>
+      <Flex mt={[4, "50px"]}>
+        <Flex  width="100%" px={["12px","44px"]}>
+          <Box mt={-2} flexGrow={1}>
+            <LogoSimple />
+          </Box>
+          <Link href="https://philipdavis.gumroad.com/l/swiftui">
+          
+            <a target="_blank">
+              <BtnNav>Purchase</BtnNav>
+            </a>
+          </Link>
+        </Flex>
       </Flex>
 
       <Box
-        mt={"40px"}
+        mt={"100px"}
         width={["92%"]}
         mx={"auto"}
         sx={{ position: "relative", maxWidth: "32rem" }}

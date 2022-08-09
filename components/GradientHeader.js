@@ -39,7 +39,7 @@ const Canvas = styled.div`
   height: 100%;
   position: absolute;
   left: -50px;
-  top: -150px;
+  top: -90px;
   filter: blur(40px);
 `;
 

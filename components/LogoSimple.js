@@ -4,8 +4,8 @@ import { colors } from "./Utils";
 
 const LogoStyles = styled.div`
   position: relative;
-  height: 84px;
-  width: 84px;
+  height: 72px;
+  width: 72px;
   filter: drop-shadow(0 2px 4px var(--simpleLogoShadow1))
     drop-shadow(0 2px 12px var(--simpleLogoShadow2));
   
@@ -17,7 +17,7 @@ const LogoStyles = styled.div`
   & .logo-bird {
     position: absolute;
     left: 14px;
-    top: 12px;
+    top: 13px;
   }
 `;
 
@@ -25,8 +25,8 @@ export default function LogoSimple(props) {
   return (
     <LogoStyles>
       <svg
-        width="84px"
-        height="84px"
+        width="72px"
+        height="72px"
         viewBox="0 0 84 84"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ export default function LogoSimple(props) {
       </svg>
 
       <svg
-        width="48px"
+        width="38px"
         viewBox="0 0 63 73"
         className="logo-bird"
         xmlns="http://www.w3.org/2000/svg"
