@@ -32,12 +32,12 @@ const Canvas = styled.div`
     ${colors.teal},
     ${colors.yellow}
   );
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  top: 75px;
+  top: -500px;
   position: absolute;
-  left: calc(50% - 138px);
+  left: calc(50% - 500px);
   filter: blur(42px);
 `;
 

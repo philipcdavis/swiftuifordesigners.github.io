@@ -1,7 +1,7 @@
 :root {
   --white: #ffffff;
   --charcoalRGB: 12, 12, 12;
-  --charcoal: rgb(var(--charcoalRGB));
+  --charcoal: #412d2d;
   --red: #ef4343;
   --purple: #9000ff;
   --blue: #0086ff;
@@ -14,13 +14,13 @@
   --lightGreen: #80f6a1;
   --lightYellow: #ffda8c;
   --surfaceBackground: #fffdfb;
-  --surfaceHighlight: #eff3f5;
+  --surfaceHighlight: #fff;
   --surfaceBorder: #dde5ea;
   --surfaceBorderHighlight: #c1cacf;
-  --cardShadow: rgba(204, 216, 223, 0.5);
+  --cardShadow: rgba(255, 240, 225, 1);
   --cardBackground: var(--surfaceBackground);
-  --primaryText: #3b3b41;
-  --secondaryText: #707081;
+  --primaryText: #654949;
+  --secondaryText: rgba(112, 86, 86, 0.75);
   --placeholderText: rgba(118, 52, 52, 0.57);
   --inputLightBackground: rgb(255, 235, 215, 1);
   --inputLightHighlight: rgba(189, 177, 165, 0.75);
@@ -96,11 +96,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: ui-rounded, SF Pro Rounded, -apple-system, BlinkMacSystemFont,
+    sans-serif;
   background-color: var(--surfaceBackground);
   color: var(--secondaryText);
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 

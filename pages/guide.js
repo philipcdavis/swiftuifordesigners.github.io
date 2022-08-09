@@ -1,8 +1,8 @@
 import Head from "../components/Head";
-import GradientBlur from "../components/GradientBlur";
+import GradientHeader from "../components/GradientHeader";
 import Link from "next/link";
 import Icon from "../components/Icon";
-import Logo from "../components/Logo";
+import LogoSimple from "../components/LogoSimple";
 import { Box, Flex, Text, Image } from "rebass";
 import { colors, colorChange } from "../components/Utils";
 import styled from "styled-components";
@@ -40,10 +40,15 @@ export default function Guide() {
         description="SwiftUI is a powerful tool for designers. You don't need to be a 10x
           engineer to get a lot from the framework."
       />
-      <GradientBlur />
-      <Logo />
+      <GradientHeader />
+
+      <Flex mt={[4, 6]}>
+        <Box mx={"auto"}>
+          <LogoSimple />
+        </Box>
+      </Flex>
       <Box
-        mt={"130px"}
+        mt={"40px"}
         width={["92%"]}
         mx={"auto"}
         sx={{ position: "relative", maxWidth: "36rem" }}

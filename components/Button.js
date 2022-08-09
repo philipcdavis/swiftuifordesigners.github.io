@@ -77,9 +77,17 @@ export const BtnLink = styled(Btn).attrs({ as: "a" })`
 `;
 
 export const BtnRainbow = styled(Btn)`
-  background-color: var(--lightPurple);
-  animation: ${colorChange("background")} 10s infinite alternate;
+  background-color: var(--charcoal);
+  animation: ${colorChange("color")} 10s infinite alternate;
   margin-right: 0;
+  border-radius: 44px;
+  font-size: 24px;
+  padding: 16px 54px 18px 54px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: var(--primaryText);
+  }
 `;
 
 export const BtnInput = styled(Btn)`

@@ -8,7 +8,8 @@ const LogoStyles = styled.div`
   width: 84px;
   border-radius: 24px;
   background: var(--logoBackground);
-  box-shadow: 0 2px 4px 0 var(--simpleLogoShadow1),0 2px 18px 0 var(--simpleLogoShadow2);
+  box-shadow: 0 2px 4px 0 var(--simpleLogoShadow1),
+    0 2px 18px 0 var(--simpleLogoShadow2);
 
   & .logo-bird {
     position: absolute;
