@@ -83,9 +83,10 @@ export const BtnRainbow = styled(Btn)`
   font-size: 24px;
   padding: 16px 54px 18px 54px;
   font-weight: 600;
+  transition: 0.3s ease-out transform;
 
   &:hover {
-    background-color: var(--primaryText);
+    transform: scale(1.2);
   }
 `;
 

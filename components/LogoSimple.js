@@ -7,7 +7,12 @@ const LogoStyles = styled.div`
   height: 84px;
   width: 84px;
   filter: drop-shadow(0 2px 4px var(--simpleLogoShadow1))
-    drop-shadow(0 2px 18px var(--simpleLogoShadow2));
+    drop-shadow(0 2px 12px var(--simpleLogoShadow2));
+  
+  @media (max-width: 630px) {
+    filter: drop-shadow(0 1px 4px var(--simpleLogoShadow3))
+    drop-shadow(0 2px 18px var(--simpleLogoShadow3));
+  }
 
   & .logo-bird {
     position: absolute;

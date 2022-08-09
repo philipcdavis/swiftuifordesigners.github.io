@@ -23,14 +23,14 @@ export default function Guide() {
     <>
       <Head title="SwiftUI for Designers" description="Prototype in SwiftUI" />
       <GradientHeader />
-      <Flex mt={[4, 6]}>
+      <Flex mt={[4, "120px"]}>
         <Box mx={"auto"}>
           <LogoSimple />
         </Box>
       </Flex>
 
       <Box
-        mt={"20px"}
+        mt={"40px"}
         width={["92%"]}
         mx={"auto"}
         sx={{ position: "relative", maxWidth: "32rem" }}
@@ -88,7 +88,7 @@ export default function Guide() {
           fontSize={[4, 5]}
           fontWeight="500"
         >
-          Learn by Building
+          Prototype in SwiftUI
         </Text>
 
         <Text>
@@ -192,7 +192,7 @@ export default function Guide() {
         >
           <Box width={[1, 3 / 12]}>
             <Image
-              mt={1}
+              mt={3}
               height="130px"
               sx={{ borderRadius: 100, filter: "saturate(1.2)" }}
               width="130px"
