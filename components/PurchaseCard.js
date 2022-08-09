@@ -6,10 +6,14 @@ import { BtnRainbow } from "./Button";
 import { colors } from "../components/Utils";
 
 const Card = styled(Box)`
-  border-radius: 42px;
+  border-radius: 36px;
   background-color: var(--surfaceHighlight);
   box-shadow: 0 3px 11px 0 var(--cardShadow), 0 1px 4px 0 var(--cardShadow);
   max-width: 34em;
+
+  @media (max-width: 600px) {
+    border-radius: 16px;
+  }
 `;
 
 const Strikethrough = styled(Text)`
@@ -48,33 +52,35 @@ const Smallar = styled(Text)`
 
 const PurchaseCard = function (props) {
   return (
-    <Card mx="auto" mt={6} px={[3, 4, "100px"]} py={[4, 5]}>
-      <Box textAlign={"center"}>
-        <Text fontWeight="600" fontSize={(4, 5)} color={colors.primaryText}>
-          Introductory Pricing
-        </Text>
-        <Text mb={3}>
-          {
-            "Pay once for full access. If you're not happy with the course, let me know within 7 days and I'll issue a refund"
-          }
-        </Text>
+    <Box px={2}>
+      <Card mx="auto" mt={[4, 6]} px={[3, 4, "100px"]} py={[4, 5]}>
+        <Box textAlign={"center"}>
+          <Text fontWeight="600" fontSize={(4, 5)} color={colors.primaryText}>
+            Introductory Pricing
+          </Text>
+          <Text mb={3}>
+            {
+              "Pay once for full access. If you're not happy with the course, let me know within 7 days and I'll issue a refund"
+            }
+          </Text>
 
-        <Strikethrough fontWeight="600" fontSize={[4]}>
-          $40
-        </Strikethrough>
-        <Box mt={-3} mb={3}>
-          <Price fontWeight="600" color={colors.primaryText} fontSize={[7]}>
-            <Smallar fontSize={[4]}>$</Smallar>
-            <Largar>25</Largar>
-          </Price>
+          <Strikethrough fontWeight="600" fontSize={[4]}>
+            $40
+          </Strikethrough>
+          <Box mt={-3} mb={3}>
+            <Price fontWeight="600" color={colors.primaryText} fontSize={[7]}>
+              <Smallar fontSize={[4]}>$</Smallar>
+              <Largar>25</Largar>
+            </Price>
+          </Box>
+          <Link href="https://philipdavis.gumroad.com/l/swiftui">
+            <a target="_blank">
+              <BtnRainbow>Purchase</BtnRainbow>
+            </a>
+          </Link>
         </Box>
-        <Link href="https://philipdavis.gumroad.com/l/swiftui">
-          <a target="_blank">
-            <BtnRainbow>Purchase</BtnRainbow>
-          </a>
-        </Link>
-      </Box>
-    </Card>
+      </Card>
+    </Box>
   );
 };
 

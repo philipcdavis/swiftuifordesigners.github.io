@@ -77,8 +77,7 @@ export const BtnLink = styled(Btn).attrs({ as: "a" })`
 `;
 
 export const BtnRainbow = styled(Btn)`
-  background-color: var(--charcoal);
-  animation: ${colorChange("color")} 10s infinite alternate;
+  animation: ${colorChange("background-color")} 10s infinite alternate;
   margin-right: 0;
   border-radius: 44px;
   font-size: 24px;

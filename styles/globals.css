@@ -19,6 +19,7 @@
   --surfaceBorderHighlight: #c1cacf;
   --cardShadow: rgba(255, 240, 225, 1);
   --cardBackground: var(--surfaceBackground);
+  --primaryButtonBackground: #654949; 
   --primaryText: #654949;
   --secondaryText: rgba(112, 86, 86, 0.75);
   --placeholderText: rgba(118, 52, 52, 0.57);
@@ -42,18 +43,20 @@
   --logoShadow2: rgba(0, 0, 0, 0.5);
   --logoShadow3: rgba(0, 0, 0, 0.6);
   --logoShadow4: rgba(0, 0, 0, 0.8);
-  --simpleLogoShadow1: rgba(255, 240, 225, 1);
-  --simpleLogoShadow2: rgba(255, 240, 225, 1);
+  --simpleLogoShadow1: rgba(255, 128, 0, 0.137);
+  --simpleLogoShadow2: rgba(255, 128, 0, 0.137);
   --top: #ffffff;
   --bottom: #dcf1ff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --surfaceBackground: var(--charcoal);
+    --surfaceBackground: #281f1f;
+    --surfaceHighlight: #403535;
     --primaryText: var(--white);
     --secondaryText: #9b9ba3;
     --gradientOverlay: rgba(var(--charcoalRGB), 0.65);
+    --primaryButtonBackground: #725e5e; 
 
     --lightRed: #ff5f5f;
     --lightPurple: #bd6dff;
@@ -142,8 +145,5 @@ ul {
 @media (max-width: 630px) {
   body {
     font-size: 1rem;
-  }
-  br {
-    display: none;
   }
 }

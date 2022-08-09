@@ -56,7 +56,7 @@ export const isDarkBackground = function (color) {
 export function colorChange(type, opacity = 1) {
   return keyframes`
     0% { ${type}: ${hexToRGB("#ff5f5f", opacity)}; }
-    25%  { ${type}: ${hexToRGB("#bd6dff", opacity)}; }
+    25%  { ${type}: ${hexToRGB("#CD90FF", opacity)}; }
     50% { ${type}: ${hexToRGB("#65adff", opacity)}; }
     75% { ${type}: ${hexToRGB("#80f6a1", opacity)}; }
     100% { ${type}: ${hexToRGB("#ffd359", opacity)}; }

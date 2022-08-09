@@ -95,7 +95,7 @@ export default function Guide() {
           {`This is a focused course with 5 videos. My favorite way to learn a new tool is by building things with it, and that's how the course is taught. You don't need to be familiar with SwiftUI or have much coding experience to get started.`}
         </Text>
 
-        <Box mt={6}>
+        <Box mt={[5, 6]}>
           <ImageCard mb={4} width="100%" src="./intro-to-xcode.png" />
           <Text
             textAlign="center"
@@ -111,7 +111,7 @@ export default function Guide() {
             }
           </Text>
         </Box>
-        <Box mt={6}>
+        <Box mt={[5, 6]}>
           <ImageCard mb={4} width="100%" src="./intro-to-swiftui.png" />
           <Text
             textAlign="center"
@@ -127,7 +127,7 @@ export default function Guide() {
             }
           </Text>
         </Box>
-        <Box mt={6}>
+        <Box mt={[5, 6]}>
           <ImageCard mb={4} width="100%" src="./fidget.gif" />
           <Text
             textAlign="center"
@@ -144,7 +144,7 @@ export default function Guide() {
           </Text>
         </Box>
 
-        <Box mt={6}>
+        <Box mt={[5, 6]}>
           <ImageCard mb={4} width="100%" src="./airpods.gif" />
           <Text
             textAlign="center"
@@ -161,7 +161,7 @@ export default function Guide() {
           </Text>
         </Box>
 
-        <Box mt={6}>
+        <Box mt={[5, 6]}>
           <ImageCard mb={4} width="100%" src="./boomerang.gif" />
           <Text
             textAlign="center"
@@ -181,7 +181,7 @@ export default function Guide() {
 
       <PurchaseCard />
 
-      <Box mt={6}>
+      <Box mt={[5, 6]}>
         <Flex
           textAlign={["center", "left"]}
           flexDirection={["column", "row"]}
@@ -199,12 +199,14 @@ export default function Guide() {
               src="https://pbs.twimg.com/profile_images/659824786260934656/syJKampr_400x400.jpg"
             />
           </Box>
-          <Flex width={[1, 9 / 12]} flexDirection={"column"}>
+          <Flex p={2} width={[1, 9 / 12]} flexDirection={"column"}>
             <Text fontWeight="600" color={colors.primaryText}>
               About the Instructor
             </Text>
             <Text>
-              {`My name is Philip Davis. I'm a designer who has prototyped interfaces at Apple and Facebook. You can follow my work on Twitter.`}
+              My name is Philip Davis. I{"'"}m a designer who has prototyped
+              interfaces at Apple and Facebook. You can follow my work on{" "}
+              <Link href="https://twitter.com/philipcdavis">Twitter</Link>.
             </Text>
           </Flex>
         </Flex>
