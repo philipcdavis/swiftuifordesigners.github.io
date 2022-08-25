@@ -65,12 +65,12 @@ const PurchaseCard = function (props) {
           </Text>
 
           <Strikethrough fontWeight="600" fontSize={[4]}>
-            $40
+            $50
           </Strikethrough>
           <Box mt={-3} mb={3}>
             <Price fontWeight="600" color={colors.primaryText} fontSize={[7]}>
               <Smallar fontSize={[4]}>$</Smallar>
-              <Largar>25</Largar>
+              <Largar>35</Largar>
             </Price>
           </Box>
           <Link href="https://philipdavis.gumroad.com/l/swiftui">
