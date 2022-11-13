@@ -32,6 +32,10 @@ export const colors = {
   logoShadow2: "var(--logoShadow2)",
   logoShadow3: "var(--logoShadow3)",
   logoShadow4: "var(--logoShadow4)",
+  
+  duskSurfaceBackground: "var(--duskSurfaceBackground)",
+  duskPrimaryText: "var(--duskPrimaryText)",
+  duskSecondaryText: "var(--duskSecondaryText)",
 };
 
 export const space = [0, 8, 16, 32, 64, 128, 256, 512];

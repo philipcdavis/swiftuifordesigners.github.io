@@ -105,6 +105,26 @@ export const BtnNav = styled(Btn)`
   }
 `;
 
+export const BtnMetal = styled(Btn)`
+  font-size: 28px;
+  padding: 14px 88px 16px 88px;
+  font-weight: 600;
+  transition: 0.3s ease-out transform;
+  background-image: linear-gradient(
+    118deg,
+    #ffbaba 0%,
+    #fffacf 46%,
+    #b6f1ff 73%,
+    #ffffff 91%
+  );
+  box-shadow: inset 0 3px 2px 0 #ffffff;
+  border-radius: 12px;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+`;
+
 export const BtnInput = styled(Btn)`
   position: absolute;
   right: 6px;

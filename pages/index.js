@@ -24,12 +24,11 @@ export default function Guide() {
       <Head title="SwiftUI for Designers" description="Prototype in SwiftUI" />
       <GradientHeader />
       <Flex mt={[4, "50px"]}>
-        <Flex  width="100%" px={["12px","44px"]}>
+        <Flex width="100%" px={["12px", "44px"]}>
           <Box mt={-2} flexGrow={1}>
             <LogoSimple />
           </Box>
           <Link href="https://philipdavis.gumroad.com/l/swiftui">
-          
             <a target="_blank">
               <BtnNav>Purchase</BtnNav>
             </a>
