@@ -194,7 +194,7 @@ export default function Guide() {
             sx={{
               display: "grid",
               gridGap: "24px",
-              gridTemplateColumns: "auto auto auto",
+              gridTemplateColumns: ["auto", "auto auto auto"],
             }}
           >
             {youtubes.map((d, i) => {
@@ -215,13 +215,13 @@ export default function Guide() {
             fontSize={[4, 6]}
             fontWeight="500"
           >
-            Source Code for over 50 prototypes
+            Source Code for over 50 prototypes.
           </Text>
 
           <Text
             className="rainbowText"
             textAlign="center"
-            fontSize={[4, 5]}
+            fontSize={[3, 5]}
             fontWeight="500"
             mt={-2}
             mb={3}
