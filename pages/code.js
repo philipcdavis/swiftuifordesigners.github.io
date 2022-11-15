@@ -141,7 +141,7 @@ export default function Guide() {
       <Head
         title="SwiftUI Prototype Kit"
         description="Source code for over 50 prototypes made in SwiftUI"
-        image="./code-banner.png"
+        image="https://swiftui.design/code-banner.png"
       />
       <Noise />
       <RadialGradient />
