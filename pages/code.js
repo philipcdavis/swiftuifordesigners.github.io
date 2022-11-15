@@ -70,11 +70,11 @@ const Noise = styled(NoiseCanvas)`
   left: 0;
   right: 0;
   top: 0;
-  right: 0;
-  z-index: 2;
-  mix-blend-mode: overlay;
-  opacity: 0.2;
+  bottom: 0;
+  z-index: 9999;
   pointer-events: none;
+  user-select: none;
+  opacity: 0.05;
 `;
 
 const EmbedContainer = styled.div`
@@ -145,6 +145,7 @@ export default function Guide() {
       />
       <Box className="code">
         <Noise />
+
         <RadialGradient />
 
         <Box mt={"80px"}>
