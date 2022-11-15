@@ -141,6 +141,7 @@ export default function Guide() {
       <Head
         title="SwiftUI Prototype Kit"
         description="Source code for over 50 prototypes made in SwiftUI"
+        image="./code-banner.png"
       />
       <Noise />
       <RadialGradient />
@@ -160,7 +161,7 @@ export default function Guide() {
           className="rainbowText"
           color={colors.duskPrimaryText}
           textAlign="center"
-          fontSize={[5, "52px"]}
+          fontSize={[4, "52px"]}
           fontWeight="500"
         >
           50+ prototypes made in SwiftUI
@@ -170,7 +171,7 @@ export default function Guide() {
           textAlign="center"
           color={colors.duskPrimaryText}
           className="rainbowText"
-          fontSize={[4, "33px"]}
+          fontSize={[3, "33px"]}
           sx={{ lineHeight: 1.3 }}
         >
           {`Source code for visual effects, rough drafts, and small design tools that i’ve been making over the past 6 months.`}
@@ -191,7 +192,7 @@ export default function Guide() {
         </Box>
       </Box>
 
-      <Box mt={[5, 6]} mb={7}>
+      <Box mt={[5, 6]} mb={[5, 7]}>
         <Flex width="92%" sx={{ maxWidth: "92rem" }} mx={"auto"}>
           <Box
             flexGrow="1"
@@ -211,7 +212,7 @@ export default function Guide() {
           className="rainbowText"
           color={colors.duskPrimaryText}
           textAlign="center"
-          mt={5}
+          mt={[0, 5]}
           pt={5}
           fontSize={[4, 6]}
           fontWeight="500"
@@ -223,7 +224,7 @@ export default function Guide() {
           <Image src="./icon-wall.png" />
         </Box>
 
-        <Box mt={5} mx="auto" sx={{ maxWidth: "34em" }}>
+        <Box mt={[0, 5]} mx="auto" width={"92%"} sx={{ maxWidth: "34em" }}>
           <Text
             className="rainbowText"
             color={colors.duskPrimaryText}
