@@ -4,9 +4,7 @@ import { NextSeo } from "next-seo";
 
 const Head = function (props) {
   const title = props.title ? props.title : "SwiftUI for Designers";
-  const themeColor = props.themeColor
-    ? props.themeColor
-    : "var(--surfaceBackground)";
+
   const description = props.description
     ? props.description
     : "SwiftUI is a powerful tool for designers. You don't need to be a 10x engineer to get a lot from the framework.";
@@ -19,7 +17,10 @@ const Head = function (props) {
         <link rel="icon" type="image/svg+xml" href="/icon.svg?v=4" />
         <link rel="apple-touch-icon" href="/icon.png?v=4" />
         <link rel="mask-icon" href="/icon.svg?v=4" color="#858A96" />
-        <meta name="theme-color" content="var(--surfaceBackground)" />
+        {props.themeColor && (
+          <meta name="theme-color" content={props.themeColor} />
+        )}
+
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </NextHead>
       <NextSeo

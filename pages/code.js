@@ -142,7 +142,7 @@ export default function Guide() {
         title="SwiftUI Prototype Kit"
         description="Source code for over 50 prototypes made in SwiftUI"
         image="https://swiftui.design/code-banner.png"
-        themeColor="var(--duskSurfaceBackground)"
+        themeColor="#ff0000"
       />
       <Box className="code">
         <Noise />
