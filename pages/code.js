@@ -138,6 +138,10 @@ const Smallar = styled(Text)`
 export default function Guide() {
   return (
     <Box className="code">
+      <Head
+        title="SwiftUI Prototype Kit"
+        description="Source code for over 50 prototypes made in SwiftUI"
+      />
       <Noise />
       <RadialGradient />
       <Head title="SwiftUI for Designers" description="Prototype in SwiftUI" />
@@ -179,7 +183,7 @@ export default function Guide() {
           sx={{ position: "relative", maxWidth: "36rem" }}
           textAlign="center"
         >
-          <Link mx="auto" href="https://philipdavis.gumroad.com/l/swiftui">
+          <Link mx="auto" href="https://philipdavis.gumroad.com/l/prototypekit">
             <a target="_blank">
               <BtnMetal mx="auto">Purchase</BtnMetal>
             </a>
@@ -203,7 +207,19 @@ export default function Guide() {
           </Box>
         </Flex>
 
-        <Box mt={5} mx="auto" sx={{ maxWidth: "75em" }}>
+        <Text
+          className="rainbowText"
+          color={colors.duskPrimaryText}
+          textAlign="center"
+          mt={5}
+          pt={5}
+          fontSize={[4, 6]}
+          fontWeight="500"
+        >
+          ...and many more
+        </Text>
+
+        <Box mt={-4} mx="auto" sx={{ maxWidth: "75em" }}>
           <Image src="./icon-wall.png" />
         </Box>
 
@@ -243,7 +259,10 @@ export default function Guide() {
                   <Largar className="rainbowText">99</Largar>
                 </Price>
               </Box>
-              <Link mx="auto" href="https://philipdavis.gumroad.com/l/swiftui">
+              <Link
+                mx="auto"
+                href="https://philipdavis.gumroad.com/l/prototypekit"
+              >
                 <a target="_blank">
                   <BtnMetal mx="auto">Purchase</BtnMetal>
                 </a>

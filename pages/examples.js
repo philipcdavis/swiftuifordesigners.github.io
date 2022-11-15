@@ -13,6 +13,7 @@ export default function Guide() {
       <Head
         title="SwiftUI examples for designers"
         description="A collection of SwiftUI examples for designers."
+        image="./code-banner.png"
       />
       <Flex p={[3, 5]}>
         <LogoSimple />
