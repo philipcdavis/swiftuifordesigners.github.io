@@ -19,7 +19,7 @@ const Head = function (props) {
         <link rel="icon" type="image/svg+xml" href="/icon.svg?v=4" />
         <link rel="apple-touch-icon" href="/icon.png?v=4" />
         <link rel="mask-icon" href="/icon.svg?v=4" color="#858A96" />
-        <meta name="theme-color" content="var(--blue)" />
+        <meta name="theme-color" content="var(--surfaceBackground)" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </NextHead>
       <NextSeo
