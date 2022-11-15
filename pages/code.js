@@ -137,142 +137,146 @@ const Smallar = styled(Text)`
 `;
 export default function Guide() {
   return (
-    <Box className="code">
+    <>
       <Head
         title="SwiftUI Prototype Kit"
         description="Source code for over 50 prototypes made in SwiftUI"
         image="https://swiftui.design/code-banner.png"
       />
-      <Noise />
-      <RadialGradient />
-      <Head title="SwiftUI for Designers" description="Prototype in SwiftUI" />
+      <Box className="code">
+        <Noise />
+        <RadialGradient />
 
-      <Box mt={"80px"}>
-        <Logo src="dusk-logo.png" />
-      </Box>
-
-      <Box
-        mt={"0px"}
-        width={["92%"]}
-        mx={"auto"}
-        sx={{ position: "relative", maxWidth: "45rem" }}
-      >
-        <Text
-          className="rainbowText"
-          color={colors.duskPrimaryText}
-          textAlign="center"
-          fontSize={[4, "52px"]}
-          fontWeight="500"
-        >
-          50+ prototypes made in SwiftUI
-        </Text>
-
-        <Text
-          textAlign="center"
-          color={colors.duskPrimaryText}
-          className="rainbowText"
-          fontSize={[3, "33px"]}
-          sx={{ lineHeight: 1.3 }}
-        >
-          {`Source code for visual effects, rough drafts, and small design tools that i’ve been making over the past 6 months.`}
-        </Text>
+        <Box mt={"80px"}>
+          <Logo src="dusk-logo.png" />
+        </Box>
 
         <Box
+          mt={"0px"}
           width={["92%"]}
-          mt={4}
           mx={"auto"}
-          sx={{ position: "relative", maxWidth: "36rem" }}
-          textAlign="center"
+          sx={{ position: "relative", maxWidth: "45rem" }}
         >
-          <Link mx="auto" href="https://philipdavis.gumroad.com/l/prototypekit">
-            <a target="_blank">
-              <BtnMetal mx="auto">Purchase</BtnMetal>
-            </a>
-          </Link>
-        </Box>
-      </Box>
-
-      <Box mt={[5, 6]} mb={[5, 7]}>
-        <Flex width="92%" sx={{ maxWidth: "92rem" }} mx={"auto"}>
-          <Box
-            flexGrow="1"
-            sx={{
-              display: "grid",
-              gridGap: "24px",
-              gridTemplateColumns: ["auto", "auto auto auto"],
-            }}
-          >
-            {youtubes.map((d, i) => {
-              return <LiteYouTubeEmbed id={d} />;
-            })}
-          </Box>
-        </Flex>
-
-        <Text
-          className="rainbowText"
-          color={colors.duskPrimaryText}
-          textAlign="center"
-          mt={[0, 5]}
-          pt={5}
-          fontSize={[4, 6]}
-          fontWeight="500"
-        >
-          ...and many more
-        </Text>
-
-        <Box mt={-4} mx="auto" sx={{ maxWidth: "75em" }}>
-          <Image src="./icon-wall.png" />
-        </Box>
-
-        <Box mt={[0, 5]} mx="auto" width={"92%"} sx={{ maxWidth: "34em" }}>
           <Text
             className="rainbowText"
             color={colors.duskPrimaryText}
             textAlign="center"
-            fontSize={[4, 6]}
+            fontSize={[4, "52px"]}
             fontWeight="500"
           >
-            Source Code for over 50 prototypes.
+            50+ prototypes made in SwiftUI
           </Text>
 
           <Text
-            className="rainbowText"
             textAlign="center"
-            fontSize={[3, 5]}
-            fontWeight="500"
-            mt={-2}
-            mb={3}
+            color={colors.duskPrimaryText}
+            className="rainbowText"
+            fontSize={[3, "33px"]}
+            sx={{ lineHeight: 1.3 }}
           >
-            One time payment for instant access.
+            {`Source code for visual effects, rough drafts, and small design tools that i’ve been making over the past 6 months.`}
           </Text>
-          <Box px={2}>
-            <Box textAlign={"center"}>
-              <Strikethrough ml={-3} fontWeight="500" fontSize={[5, 6]}>
-                $250
-              </Strikethrough>
-              <Box mt={-3} mb={3}>
-                <Price
-                  fontWeight="600"
-                  color={colors.primaryText}
-                  fontSize={[5]}
+
+          <Box
+            width={["92%"]}
+            mt={4}
+            mx={"auto"}
+            sx={{ position: "relative", maxWidth: "36rem" }}
+            textAlign="center"
+          >
+            <Link
+              mx="auto"
+              href="https://philipdavis.gumroad.com/l/prototypekit"
+            >
+              <a target="_blank">
+                <BtnMetal mx="auto">Purchase</BtnMetal>
+              </a>
+            </Link>
+          </Box>
+        </Box>
+
+        <Box mt={[5, 6]} mb={[5, 7]}>
+          <Flex width="92%" sx={{ maxWidth: "92rem" }} mx={"auto"}>
+            <Box
+              flexGrow="1"
+              sx={{
+                display: "grid",
+                gridGap: "24px",
+                gridTemplateColumns: ["auto", "auto auto auto"],
+              }}
+            >
+              {youtubes.map((d, i) => {
+                return <LiteYouTubeEmbed key={i} id={d} />;
+              })}
+            </Box>
+          </Flex>
+
+          <Text
+            className="rainbowText"
+            color={colors.duskPrimaryText}
+            textAlign="center"
+            mt={[0, 5]}
+            pt={5}
+            fontSize={[4, 6]}
+            fontWeight="500"
+          >
+            ...and many more
+          </Text>
+
+          <Box mt={-4} mx="auto" sx={{ maxWidth: "75em" }}>
+            <Image src="./icon-wall.png" />
+          </Box>
+
+          <Box mt={[0, 5]} mx="auto" width={"92%"} sx={{ maxWidth: "34em" }}>
+            <Text
+              className="rainbowText"
+              color={colors.duskPrimaryText}
+              textAlign="center"
+              fontSize={[4, 6]}
+              fontWeight="500"
+            >
+              Source Code for over 50 prototypes.
+            </Text>
+
+            <Text
+              className="rainbowText"
+              textAlign="center"
+              fontSize={[3, 5]}
+              fontWeight="500"
+              mt={-2}
+              mb={3}
+            >
+              One time payment for instant access.
+            </Text>
+            <Box px={2}>
+              <Box textAlign={"center"}>
+                <Strikethrough ml={-3} fontWeight="500" fontSize={[5, 6]}>
+                  $250
+                </Strikethrough>
+                <Box mt={-3} mb={3}>
+                  <Price
+                    fontWeight="600"
+                    color={colors.primaryText}
+                    fontSize={[5]}
+                  >
+                    <Smallar fontSize={[5]}>$</Smallar>
+                    <Largar className="rainbowText">99</Largar>
+                  </Price>
+                </Box>
+                <Link
+                  mx="auto"
+                  href="https://philipdavis.gumroad.com/l/prototypekit"
                 >
-                  <Smallar fontSize={[5]}>$</Smallar>
-                  <Largar className="rainbowText">99</Largar>
-                </Price>
+                  <a target="_blank">
+                    <BtnMetal mx="auto">Purchase</BtnMetal>
+                  </a>
+                </Link>
+                <Text>Price going up soon</Text>
               </Box>
-              <Link
-                mx="auto"
-                href="https://philipdavis.gumroad.com/l/prototypekit"
-              >
-                <a target="_blank">
-                  <BtnMetal mx="auto">Purchase</BtnMetal>
-                </a>
-              </Link>
-              <Text>Price going up soon</Text>
             </Box>
           </Box>
         </Box>
       </Box>
-    </Box>
+    </>
   );
 }
