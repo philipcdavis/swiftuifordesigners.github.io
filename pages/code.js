@@ -172,7 +172,7 @@ export default function Guide() {
             textAlign="center"
             color={colors.duskPrimaryText}
             className="rainbowText"
-            fontSize={[2, "33px"]}
+            fontSize={[3, "33px"]}
             sx={{ lineHeight: 1.3 }}
           >
             {`Source code for visual effects, rough drafts, and small design tools that i’ve been making over the past 6 months.`}
