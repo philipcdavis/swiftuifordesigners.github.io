@@ -112,6 +112,7 @@ body {
   line-height: 1.6;
 }
 
+html .code,
 body .code {
   background-color: var(--duskSurfaceBackground);
   color: var(--duskSecondaryText);
