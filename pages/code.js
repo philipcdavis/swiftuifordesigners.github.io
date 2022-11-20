@@ -197,7 +197,7 @@ export default function Guide() {
           </Box>
         </Box>
 
-        <Box mt={[5, 6]} mb={[5, 7]}>
+        <Box mt={[5, 6]} pb={[5, 7]}>
           <Flex width="92%" sx={{ maxWidth: "92rem" }} mx={"auto"}>
             <Box
               flexGrow="1"
