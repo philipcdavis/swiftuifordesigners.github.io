@@ -253,7 +253,7 @@ export default function Guide() {
             <Box px={2}>
               <Box textAlign={"center"}>
                 <Strikethrough ml={-3} fontWeight="500" fontSize={[5, 6]}>
-                  $250
+                  $500
                 </Strikethrough>
                 <Box mt={-3} mb={3}>
                   <Price
