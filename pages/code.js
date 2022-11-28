@@ -262,7 +262,7 @@ export default function Guide() {
                     fontSize={[5]}
                   >
                     <Smallar fontSize={[5]}>$</Smallar>
-                    <Largar className="rainbowText">99</Largar>
+                    <Largar className="rainbowText">199</Largar>
                   </Price>
                 </Box>
                 <Link
