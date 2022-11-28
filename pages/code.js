@@ -273,7 +273,6 @@ export default function Guide() {
                     <BtnMetal mx="auto">Purchase</BtnMetal>
                   </a>
                 </Link>
-                <Text>Price going up soon</Text>
               </Box>
             </Box>
           </Box>
