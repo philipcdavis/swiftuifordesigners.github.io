@@ -39,8 +39,8 @@ const Canvas = styled.div`
   height: 100%;
   position: absolute;
   left: -50px;
-  top: -90px;
-  filter: blur(40px);
+  top: -180px;
+  filter: blur(30px);
 `;
 
 const GradientBlur = () => {

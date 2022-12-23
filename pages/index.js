@@ -5,7 +5,7 @@ import LogoSimple from "../components/LogoSimple";
 import { Box, Flex, Text, Image } from "rebass";
 import { colors } from "../components/Utils";
 import { ExampleCard } from "../components/Card";
-import { BtnRainbow, BtnNav } from "../components/Button";
+import { BtnRainbow, BtnSecondary, BtnNav } from "../components/Button";
 import SignupForm from "../components/SignupForm";
 import PurchaseCard from "../components/PurchaseCard";
 import styled from "styled-components";
@@ -23,21 +23,12 @@ export default function Guide() {
     <>
       <Head title="SwiftUI for Designers" description="Prototype in SwiftUI" />
       <GradientHeader />
-      <Flex mt={[4, "50px"]}>
-        <Flex width="100%" px={["12px", "44px"]}>
-          <Box mt={-2} flexGrow={1}>
-            <LogoSimple />
-          </Box>
-          <Link href="https://philipdavis.gumroad.com/l/swiftui">
-            <a target="_blank">
-              <BtnNav>Purchase</BtnNav>
-            </a>
-          </Link>
-        </Flex>
-      </Flex>
+      <Box mt={[5, 6]} mx={"auto"}>
+        <LogoSimple />
+      </Box>
 
       <Box
-        mt={"100px"}
+        mt={[1, 4]}
         width={["92%"]}
         mx={"auto"}
         sx={{ position: "relative", maxWidth: "32rem" }}
@@ -46,11 +37,28 @@ export default function Guide() {
           color={colors.primaryText}
           mb={3}
           textAlign="center"
-          fontSize={[4, 5]}
+          fontSize={[5, 6]}
           fontWeight="500"
         >
           SwiftUI for Designers
         </Text>
+        <Flex justifyContent="center" mb={4}>
+          <Box mx={2}>
+            <Link textAlign="center" href="/code">
+              <BtnSecondary>Prototype Kit</BtnSecondary>
+            </Link>
+          </Box>
+          <Box mx={2}>
+            <Link
+              textAlign="center"
+              href="https://philipdavis.gumroad.com/l/swiftui"
+            >
+              <a target="_blank">
+                <BtnNav>Video Course</BtnNav>
+              </a>
+            </Link>
+          </Box>
+        </Flex>
 
         <Text>
           {`SwiftUI is a great tool for making interactive prototypes. There's a
@@ -187,6 +195,12 @@ export default function Guide() {
       </Box>
 
       <PurchaseCard />
+
+      <Box textAlign="center" mt={[3, 4]} mx={2}>
+        <Link href="/code">
+          <BtnSecondary>Get 50+ Prototypes made in SwiftUI</BtnSecondary>
+        </Link>
+      </Box>
 
       <Box mt={[5, 6]}>
         <Flex

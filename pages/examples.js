@@ -1,6 +1,7 @@
 import Head from "../components/Head";
 import Link from "next/link";
 import LogoSimple from "../components/LogoSimple";
+import GradientHeader from "../components/GradientHeader";
 import { Box, Flex, Text } from "rebass";
 import { colors } from "../components/Utils";
 import { ExampleCard } from "../components/Card";
@@ -14,20 +15,13 @@ export default function Guide() {
         title="SwiftUI examples for designers"
         description="A collection of SwiftUI examples for designers."
       />
-      <Flex p={[3, 5]}>
-        <LogoSimple />
-        <Box flexGrow={1} />
-        <Flex alignItems="center">
-          <Link href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fswiftui.design%2Fexamples&via=philipcdavis&text=SwiftUI%20Examples%20for%20Designers">
-            <a target="_blank">
-              <BtnTwitter twitter>Share</BtnTwitter>
-            </a>
-          </Link>
-        </Flex>
+      <GradientHeader />
+      <Flex mt={[4, 5]}>
+        <Box mx={"auto"}>
+          <LogoSimple />
+        </Box>
       </Flex>
-
       <Box
-        mt={"20px"}
         width={["92%"]}
         mx={"auto"}
         sx={{ position: "relative", maxWidth: "36rem" }}
@@ -132,7 +126,6 @@ export default function Guide() {
           />
         </Flex>
       </Box>
-
       <Box
         mt={"20px"}
         width={["92%"]}

@@ -91,8 +91,23 @@ export const BtnRainbow = styled(Btn)`
 `;
 
 export const BtnNav = styled(Btn)`
-  background-color: var(--charcoal);
-  animation: ${colorChange("color")} 10s infinite alternate;
+  animation: ${colorChange("background-color")} 10s infinite alternate;
+  margin-right: 0;
+  border-radius: 44px;
+  font-size: 18px;
+  padding: 14px 44px 16px 44px;
+  font-weight: 600;
+  transition: 0.3s ease-out transform;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+`;
+
+export const BtnSecondary = styled(Btn)`
+  animation: ${colorChange("background-color", 0.14)} 10s infinite alternate;
+  background-color: var(--surfaceHighlight);
+  color: var(--primaryText);
   margin-right: 0;
   border-radius: 44px;
   font-size: 18px;
